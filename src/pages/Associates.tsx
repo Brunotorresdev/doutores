@@ -689,8 +689,8 @@ const Associates: React.FC = () => {
                         ) {
                            return val
                         }
-                     }).map((name) => (
-                        <li>{name}</li>
+                     }).map((name, index) => (
+                        <li key={index}>{name}</li>
                      ))}
                   </AssociatesContainer>
 
@@ -705,8 +705,8 @@ const Associates: React.FC = () => {
                         ) {
                            return val
                         }
-                     }).map((name) => (
-                        <li>{name}</li>
+                     }).map((name, index) => (
+                        <li key={index}>{name}</li>
                      ))}
                   </AssociatesContainer>
                </div>
