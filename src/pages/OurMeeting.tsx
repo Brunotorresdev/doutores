@@ -143,7 +143,7 @@ const Section = styled.div`
 
       > img {
          width: 90%;
-         height: 60px;
+         height: 45px;
       }
 
       > p {

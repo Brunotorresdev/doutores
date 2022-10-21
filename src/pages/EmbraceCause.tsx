@@ -79,10 +79,7 @@ const EmbraceCause: React.FC = () => {
                      <h1>SÓCIOS DA ALEGRIA</h1>
                      <p>
                         Para conhecer quem ajuda Doutores da Alegria, <br />{' '}
-                        <a
-                           href="https://docs.google.com/spreadsheets/d/1TVlNk5ZVshgEAuNscbERQ0hUvgcK13rn/edit?usp=sharing&ouid=110952349873597834753&rtpof=true&sd=true"
-                           target="blank"
-                        >
+                        <a onClick={() => navigate('/socios')}>
                            acesse a lista de sócios.
                         </a>
                      </p>
@@ -124,6 +121,9 @@ const Section = styled.div`
    max-width: 1441px;
    display: flex;
    padding: 0 10px;
+   @media (max-width: 1050px) {
+      flex-direction: column-reverse;
+   }
    h1 {
       font-family: 'Roboto Condensed';
       font-style: normal;
@@ -197,7 +197,10 @@ const ImgPalhacos = styled.img`
    width: 35%;
 
    @media (max-width: 1050px) {
-      display: none;
+      position: relative;
+      max-width: 600px;
+      width: 100%;
+      margin-bottom: 20px;
    }
 `
 const HeaderImg = styled.img`
@@ -220,6 +223,6 @@ const ImgTitle = styled.img`
    }
    @media (max-width: 510px) {
       max-width: 350px;
-      height: 60px;
+      height: 47px;
    }
 `

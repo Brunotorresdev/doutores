@@ -28,7 +28,6 @@ const AllVirtual: React.FC = () => {
                         href="https://doutoresdaalegria.org.br/doutores-em-casa/"
                         target="blank"
                      >
-                        
                         como havia sido em 2020.
                      </a>
                   </p>
@@ -126,6 +125,10 @@ const Section = styled.div`
    padding: 0 15px;
    position: relative;
 
+   @media (max-width: 1050px) {
+      flex-direction: column-reverse;
+   }
+
    h1 {
       font-family: 'Roboto Condensed', sans-serif;
       font-style: normal;
@@ -204,7 +207,10 @@ const ImgPalhacos = styled.img`
    max-width: 500px;
 
    @media (max-width: 1050px) {
-      display: none;
+      margin-top: 0px;
+      position: relative;
+      max-width: 600px;
+      width: 100%;
    }
 `
 const ImgData = styled.img`

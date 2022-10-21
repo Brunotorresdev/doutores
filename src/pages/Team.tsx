@@ -759,10 +759,10 @@ const Section = styled.div`
 
       > img {
          width: 100%;
-         max-width: 350px;
+         max-width: 250px;
          @media (max-width: 500px) {
             :first-of-type {
-               height: 60px;
+               height: 47px;
             }
          }
       }

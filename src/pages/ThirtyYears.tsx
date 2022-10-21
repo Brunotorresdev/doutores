@@ -439,12 +439,12 @@ const Depoiment = styled.p`
 
    > span {
       display: block;
-      margin-top: 10px;
+      margin-top: 12px;
       font-family: 'Roboto Condensed';
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
-      line-height: 32px;
+      line-height: 20px;
       color: #000000;
    }
 

@@ -345,6 +345,13 @@ const ContainerLogos = styled.div`
    flex-wrap: wrap;
    align-items: center;
    margin-bottom: 100px;
+
+   @media(max-width: 500px){
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+   }
 `
 
 const ContainerLogosTwo = styled.div`
@@ -359,6 +366,13 @@ const ContainerLogosTwo = styled.div`
    :first-child {
       margin-bottom: 100px;
    }
+
+   @media(max-width: 500px){
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+   }
 `
 
 const ContainerLogosThree = styled.div`
@@ -370,6 +384,13 @@ const ContainerLogosThree = styled.div`
    flex-wrap: wrap;
    align-items: center;
    margin-bottom: 100px;
+
+   @media(max-width: 500px){
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+   }
 `
 
 const ContainerPatrocinadorGentileza = styled.div`

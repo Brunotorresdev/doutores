@@ -136,7 +136,7 @@ const HalfToHalf: React.FC = () => {
                         <span>
                            <img src={TopicoImg} /> 220
                         </span>
-                        pessoas. (Plateias e Convida)
+                        pessoas. (Plateias Convida)
                      </p>
                   </div>
                </NumberStates>
@@ -180,6 +180,10 @@ const Section = styled.div`
    display: flex;
    padding: 0 10px;
    position: relative;
+
+   @media (max-width: 1050px) {
+  flex-direction: column-reverse;
+   }
 
    h1 {
       font-family: 'Roboto Condensed';
@@ -262,7 +266,9 @@ const ImgPalhacos = styled.img`
    right: 0;
 
    @media (max-width: 1050px) {
-      display: none;
+      position: relative;
+      max-width: 600px;
+      width: 100%;
    }
 `
 const SectionDepoiments = styled(Section)`

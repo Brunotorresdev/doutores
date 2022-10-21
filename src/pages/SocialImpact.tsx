@@ -114,8 +114,8 @@ const SocialImpact: React.FC = () => {
                   <ContainerPorcentagem>
                      <img src={Img96} alt="" />
                      <p>
-                        dos profissionais de saúde afirmam que as crianças{' '}
-                        ficam mais à vontade com o ambiente do hospital.
+                        dos profissionais de saúde afirmam que as crianças ficam
+                        mais à vontade com o ambiente do hospital.
                         <br />
                         <br />
                      </p>
@@ -123,8 +123,8 @@ const SocialImpact: React.FC = () => {
                   <ContainerPorcentagem>
                      <img src={Img96} alt="" />
                      <p>
-                        dos profissionais de saúde afirmam que as crianças{' '}
-                        ficam mais à vontade com o ambiente do hospital.
+                        dos profissionais de saúde afirmam que as crianças ficam
+                        mais à vontade com o ambiente do hospital.
                         <br />
                         <br />
                      </p>
@@ -165,6 +165,11 @@ const Section = styled.div`
    max-width: 1441px;
    display: flex;
    padding: 0 10px;
+
+   @media (max-width: 1144px) {
+      flex-direction: column-reverse;
+   }
+
    h1 {
       font-family: 'Roboto Condensed';
       font-style: normal;
@@ -174,8 +179,8 @@ const Section = styled.div`
       margin-top: 50px;
       margin-bottom: 30px;
    }
- 
-   a{
+
+   a {
       background-color: #f162a5;
       color: #fff;
       cursor: pointer;
@@ -196,8 +201,8 @@ const Section = styled.div`
    }
    div > img {
       margin-bottom: 30px;
-      :first-of-type{
-         height: 60px;
+      :first-of-type {
+         height: 45px;
       }
    }
 `
@@ -256,7 +261,10 @@ const ImgPalhacos = styled.img`
       margin-top: 100px;
    }
    @media (max-width: 1144px) {
-      display: none;
+      position: relative;
+      max-width: 600px;
+      width: 100%;
+      margin: 0;
    }
 `
 const DeclaracaoImg = styled.img`
@@ -306,7 +314,7 @@ const ContainerPorcentagem = styled.div`
 `
 
 const MsgFont = styled.div`
-max-width: 400px;
+   max-width: 400px;
    font-family: 'Roboto Condensed';
    font-style: normal;
    font-weight: 650;
