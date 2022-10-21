@@ -87,6 +87,7 @@ const Section = styled.div`
       background-color: #f162a5;
       color: #fff;
       cursor: pointer;
+      text-decoration: none;
    }
    div {
       width: 100%;
