@@ -18,13 +18,13 @@ const SocialImpact: React.FC = () => {
                <div>
                   <ImgTitle src={ImgTitleSection} alt="Imagina imaginar?" />
 
-                  <p>
+                  <FristP>
                      Criada em 1991 pelo ator Wellington Nogueira, a partir de
                      uma experiência pioneira nos Estados Unidos, Doutores da
                      Alegria inaugurou uma tecnologia social que expandiu o
                      campo de atuação de artistas, fortaleceu a humanização na
                      saúde pública e propôs um circuito de artes nos hospitais.
-                  </p>
+                  </FristP>
                   <h1>EXPERIÊNCIA PIONEIRA E ÚNICA</h1>
                   <p>
                      Essa proposta genuinamente brasileira, que combina arte e
@@ -47,9 +47,9 @@ const SocialImpact: React.FC = () => {
                      <br />
                   </li>
                   <li>
-                     Única porque desenvolveu uma metodologia para formar
-                     jovens artistas. Única porque transpôs sua experiência
-                     para a sociedade na forma de espetáculos, formações,
+                     Única porque desenvolveu uma metodologia para formar jovens
+                     artistas. Única porque transpôs sua experiência para a
+                     sociedade na forma de espetáculos, formações,
                      documentários, vídeos e palestras.
                      <br />
                      <br />
@@ -63,35 +63,31 @@ const SocialImpact: React.FC = () => {
                <div>
                   <p>
                      Para uma criança ou adolescente, enfrentar um tratamento no
-                     hospital pode trazer carga <br /> elevada de estresse
-                     físico e psicológico, ainda mais em longas internações.
-                     Essa experiência
-                     <br /> pode ter implicações no apetite, sono, desempenho
-                     cognitivo e comportamento social. <br />
+                     hospital pode trazer carga elevada de estresse físico e
+                     psicológico, ainda mais em longas internações. Essa
+                     experiência pode ter implicações no apetite, sono,
+                     desempenho cognitivo e comportamento social.
                   </p>
                   <p>
                      Brincar é uma maneira de recuperar o bem-estar dos pequenos
-                     pacientes. Diversos <br /> especialistas apontam o papel do
-                     brincar na compreensão e na adaptação da criança a <br />{' '}
+                     pacientes. Diversos especialistas apontam o papel do
+                     brincar na compreensão e na adaptação da criança a
                      procedimentos médicos invasivos e a um maior nível de
-                     cooperação nos tratamentos e exames
-                     <br /> médicos (Araújo & Guimarães, 2009; Azevedo et al.,
-                     2008; Fernandes & Arriaga, 2010, Masetti,
-                     <br /> 2003; Motta & Enumo, 2004).
-                     <br />
+                     cooperação nos tratamentos e exames médicos (Araújo &
+                     Guimarães, 2009; Azevedo et al., 2008; Fernandes & Arriaga,
+                     2010, Masetti, 2003; Motta & Enumo, 2004).
                   </p>
                   <p>
                      Nos encontros semanais com pacientes, os palhaços subvertem
-                     a rotina hospitalar e propõem <br /> novos sentidos para a
+                     a rotina hospitalar e propõem novos sentidos para a
                      experiência de internação.
-                  </p>{' '}
+                  </p>
                   <br />
                   <p>
                      Assim, a associação contribui para o desenvolvimento
-                     integral da criança no ambiente
-                     <br /> hospitalar por meio de estímulos culturais, da
-                     brincadeira, do resgate do lúdico e estímulo ao
-                     <br /> fortalecimento dos vínculos afetivos entre as
+                     integral da criança no ambiente hospitalar por meio de
+                     estímulos culturais, da brincadeira, do resgate do lúdico e
+                     estímulo ao fortalecimento dos vínculos afetivos entre as
                      crianças e seus pais e acompanhantes.
                   </p>
                </div>
@@ -100,8 +96,25 @@ const SocialImpact: React.FC = () => {
                      <img src={Img96} alt="" />
 
                      <p>
-                        dos profissionais de saúde afirmam que as crianças{' '}
+                        dos profissionais de saúde afirmam que as crianças ficam
+                        mais à vontade com o ambiente do hospital.
                         <br />
+                        <br />
+                     </p>
+                  </ContainerPorcentagem>
+                  <ContainerPorcentagem>
+                     <img src={Img96} alt="" />
+                     <p>
+                        dos profissionais de saúde afirmam que as crianças ficam
+                        mais à vontade com o ambiente do hospital.
+                        <br />
+                        <br />
+                     </p>
+                  </ContainerPorcentagem>
+                  <ContainerPorcentagem>
+                     <img src={Img96} alt="" />
+                     <p>
+                        dos profissionais de saúde afirmam que as crianças{' '}
                         ficam mais à vontade com o ambiente do hospital.
                         <br />
                         <br />
@@ -111,27 +124,6 @@ const SocialImpact: React.FC = () => {
                      <img src={Img96} alt="" />
                      <p>
                         dos profissionais de saúde afirmam que as crianças{' '}
-                        <br />
-                        ficam mais à vontade com o ambiente do hospital.
-                        <br />
-                        <br />
-                     </p>
-                  </ContainerPorcentagem>
-                  <ContainerPorcentagem>
-                     <img src={Img96} alt="" />
-                     <p>
-                        dos profissionais de saúde afirmam que as crianças{' '}
-                        <br />
-                        ficam mais à vontade com o ambiente do hospital.
-                        <br />
-                        <br />
-                     </p>
-                  </ContainerPorcentagem>
-                  <ContainerPorcentagem>
-                     <img src={Img96} alt="" />
-                     <p>
-                        dos profissionais de saúde afirmam que as crianças{' '}
-                        <br />
                         ficam mais à vontade com o ambiente do hospital.
                         <br />
                         <br />
@@ -139,7 +131,7 @@ const SocialImpact: React.FC = () => {
                   </ContainerPorcentagem>
                   <MsgFont>
                      * fonte: Avaliação do resultado do trabalho dos Doutores da
-                     Alegria em <br /> hospitais / Instituto Fonte
+                     Alegria em hospitais / Instituto Fonte
                   </MsgFont>
                </div>
             </SectionInfos>
@@ -182,9 +174,11 @@ const Section = styled.div`
       margin-top: 50px;
       margin-bottom: 30px;
    }
-   span {
+ 
+   a{
       background-color: #f162a5;
       color: #fff;
+      cursor: pointer;
    }
    div {
       max-width: 650px;
@@ -192,7 +186,7 @@ const Section = styled.div`
    }
    div > p,
    li {
-      max-width: 676px;
+      max-width: 475px;
       font-family: 'Roboto Condensed';
       font-style: normal;
       font-weight: 600;
@@ -202,8 +196,15 @@ const Section = styled.div`
    }
    div > img {
       margin-bottom: 30px;
+      :first-of-type{
+         height: 60px;
+      }
    }
 `
+const FristP = styled.p`
+   max-width: 685px !important;
+`
+
 const Footer = styled.div`
    width: 100%;
    background-color: #fff;
@@ -272,6 +273,7 @@ const SectionInfos = styled.div`
    gap: 0 20px;
    padding: 0 10px;
    p {
+      max-width: 690px;
       font-family: 'Roboto Condensed';
       font-style: normal;
       font-weight: 600;
@@ -293,6 +295,7 @@ const ContainerPorcentagem = styled.div`
       margin-right: 15px;
    }
    p {
+      max-width: 384px;
       margin: 0;
       margin-top: 25px;
       @media (max-width: 486px) {
@@ -303,6 +306,7 @@ const ContainerPorcentagem = styled.div`
 `
 
 const MsgFont = styled.div`
+max-width: 400px;
    font-family: 'Roboto Condensed';
    font-style: normal;
    font-weight: 650;

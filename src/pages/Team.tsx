@@ -10,7 +10,7 @@ import Member2 from '../assets/images/equipe/Wellington Nogueira Dr. Zinho-1.png
 import Member3 from '../assets/images/equipe/Daiane Carina Barbieri Ratã.png'
 import Member4 from '../assets/images/equipe/lourdes.png'
 import Member5 from '../assets/images/equipe/Ronaldo Aguiar_.png'
-import Member6 from '../assets/images/equipe/simone_pimental.png' 
+import Member6 from '../assets/images/equipe/simone_pimental.png'
 import Member7 from '../assets/images/equipe/Edilene Silva.png'
 import Member8 from '../assets/images/equipe/Claudia-Queliconi.png'
 import Member9 from '../assets/images/equipe/Leticia Jardim.png'
@@ -20,7 +20,7 @@ import Member12 from '../assets/images/equipe/Gabriela Caseff.png'
 import Member13 from '../assets/images/equipe/Bruno Tavares.png'
 import Member14 from '../assets/images/equipe/Danilo Lima.png'
 import Member15 from '../assets/images/equipe/Thais-Moura.png'
-import Member16 from '../assets/images/equipe/Pollyanna-Diniz.png' 
+import Member16 from '../assets/images/equipe/Pollyanna-Diniz.png'
 import Member17 from '../assets/images/equipe/Patricia Santos Souza.png'
 import Member18 from '../assets/images/equipe/Regiane-Bueno.png'
 import Member19 from '../assets/images/equipe/Selma Soares.png'
@@ -50,7 +50,7 @@ import Member42 from '../assets/images/equipe/Dênis Goyos.png'
 import Member43 from '../assets/images/equipe/Duico Vasconcelos.png'
 import Member44 from '../assets/images/equipe/Henrique Rímoli.png'
 import Member45 from '../assets/images/equipe/Juliana Gontijo - in memorian.png'
-import Member46 from '../assets/images/equipe/Filipe Bregantim.png' 
+import Member46 from '../assets/images/equipe/Filipe Bregantim.png'
 import Member47 from '../assets/images/equipe/Gabi Zanola.png'
 import Member48 from '../assets/images/equipe/Igor-Canova.png'
 import Member49 from '../assets/images/equipe/Layla Ruiz_.png'
@@ -738,10 +738,12 @@ const ConcelhoFlex = styled.div`
 
 const Section = styled.div`
    margin: auto;
-   max-width: 1441px;
    display: flex;
-   padding: 0 5%;
+   padding: 0 10px;
    position: relative;
+   max-width: 1441px;
+   width: 100%;
+   margin: auto;
 
    > div {
       width: 100%;
@@ -758,6 +760,11 @@ const Section = styled.div`
       > img {
          width: 100%;
          max-width: 350px;
+         @media (max-width: 500px) {
+            :first-of-type {
+               height: 60px;
+            }
+         }
       }
 
       > p {

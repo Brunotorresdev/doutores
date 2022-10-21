@@ -16,22 +16,22 @@ const ThinkingOutLoud: React.FC = () => {
                <div>
                   <img src={ImgEmergency} alt="" />
                   <h1>
-                     Podcast e Boca Larga abordam arte e saúde mental <br /> em
-                     tempos de pandemia
+                     PODCAST E BOCA LARGA ABORDAM ARTE E SAÚDE MENTAL EM TEMPOS
+                     DE PANDEMIA
                   </h1>
 
                   <p>
                      As experiências de produção artística vividas no
-                     confinamento da pandemia foram processadas <br /> de
-                     maneiras diferentes pelos palhaços e palhaças. E também
-                     pela equipe de profissionais que <br /> atuam nos diversos
-                     projetos da associação.
+                     confinamento da pandemia foram processadas de maneiras
+                     diferentes pelos palhaços e palhaças. E também pela equipe
+                     de profissionais que atuam nos diversos projetos da
+                     associação.
                      <br />
                      <br />
                      Dois projetos foram lançados no final de 2021 como maneira
-                     de trazer à tona e compartilhar <br /> com o público essas
-                     vivências: o <span> podcast ‘O Palhaço, O Que É?’</span> e
-                     o <span>Boca Larga.</span>
+                     de trazer à tona e compartilhar com o público essas
+                     vivências: o <a href='https://doutoresdaalegria.org.br/blog/doutores-da-alegria-lanca-podcast-o-palhaco-o-que-e/' target='blank'> podcast ‘O Palhaço, O Que É?’</a> e
+                     o <a href='https://doutoresdaalegria.org.br/blog/da-melancolia-a-utopia/' target='blank'>Boca Larga.</a>
                   </p>
                </div>
                <ImageFest src={ImgDoutora} alt="" />
@@ -67,7 +67,12 @@ const Section = styled.div`
    align-items: center;
    padding: 0 15px;
 
+   @media (max-width: 1270px) {
+      flex-direction: column-reverse;
+   }
+
    h1 {
+      max-width: 600px;
       font-family: 'Roboto Condensed';
       font-style: normal;
       font-weight: 600;
@@ -77,15 +82,17 @@ const Section = styled.div`
       color: #303030;
    }
 
-   span {
+ 
+   a{
       background-color: #f162a5;
       color: #fff;
+      cursor: pointer;
    }
    div {
       width: 100%;
       p {
          margin-top: 30px;
-         max-width: 676px;
+         max-width: 700px;
          font-family: 'Roboto Condensed';
          font-style: normal;
          font-weight: 500;
@@ -142,10 +149,15 @@ const ImageFest = styled.img`
    right: 0;
    max-height: 881px;
    height: 100%;
+   margin-top: 100px;
    @media (max-width: 1430px) {
       width: 491px;
    }
    @media (max-width: 1270px) {
-      display: none;
+      position: relative;
+      max-width: 491px;
+      width: 100%;
+      margin-bottom: 20px;
+      margin-top: 0;
    }
 `

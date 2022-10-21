@@ -37,6 +37,7 @@ const FooterContainerBottom = styled.div`
    display: flex;
    justify-content: space-between;
    position: relative;
+   padding-left: 10px;
 
    div {
       display: flex;

@@ -19,11 +19,21 @@ const OurFlag: React.FC = () => {
                      alt="Nossa Bandeira: cultura como direito de todos"
                   />
                   <p>
-                     <span>Leia aqui o manifesto dos Doutores da Alegria </span>{' '}
-                     que levanta a bandeira da cultura como um <br /> direito de
-                     todos. <br /> E conheça a{' '}
-                     <span>tarefa institucional e os valores</span> que orientam
-                     a organização.
+                     <a
+                        href="https://doutoresdaalegria.org.br/blog/cultura-como-direito/"
+                        target="blank"
+                     >
+                        Leia aqui o manifesto dos Doutores da Alegria{' '}
+                     </a>{' '}
+                     que levanta a bandeira da cultura como um direito de todos.{' '}
+                     <br /> E conheça a{' '}
+                     <a
+                        href="https://doutoresdaalegria.org.br/conheca/sobre-doutores/"
+                           target="blank"
+                     >
+                        tarefa institucional e os valores
+                     </a>{' '}
+                     que orientam a organização.
                   </p>
                </div>
                <PalhacoImg src={ImgPalhaco} alt="" />
@@ -52,7 +62,7 @@ const Body = styled.div`
    margin-top: -16%;
    padding-top: 16%;
    padding-bottom: 30px;
-  
+
    @media (max-width: 1240px) {
       margin-top: -26%;
       padding-top: 26%;
@@ -68,13 +78,18 @@ const Section = styled.div`
       flex-direction: column-reverse;
    }
 
-   div p > span {
+   div {
+      max-width: 640px;
+   }
+
+   div p > a {
       background-color: #f162a5;
       color: #fff;
+      cursor: pointer;
+      text-decoration: none;
    }
    div > p {
       margin-top: 79px;
-      max-width: 676px;
       font-family: 'Roboto Condensed';
       font-style: normal;
       font-weight: 500;

@@ -41,41 +41,53 @@ const HalfToHalf: React.FC = () => {
             </Section>
             <SectionDepoiments>
                <Depoiment>
-                  “É uma emoção "andar" pelos corredores e ver todos trabalhando
-                  depois de um ano. Em um tempo tão louco, o contato com o outro
-                  é essencial para a saúde e a sanidade.”
-                  <span>Val Pires / Dr. Valdisney</span>
+                  “É UM NOVO TEMPO, UMA NOVA CONDUTA. O VÍRUS NOS COLOCA EM
+                  OUTRA PERSPECTIVA DIANTE DOS ENCONTROS, COM USO DE MÁSCARA,
+                  DISTÂNCIA, ATENÇÃO ONDE ENCOSTAR AS MÃOS E O CORPO. A
+                  DELICADEZA E O CUIDADO COM O PRÓXIMO SÃO APRENDIZADOS
+                  OBRIGATÓRIOS DESSA JORNADA.”
+                  <span>Suzana Aragão / Dra. Bolot’s</span>
                </Depoiment>
                <ImgDepoimentsBG src={ImageDepoiments} />
             </SectionDepoiments>
             <Section>
                <div>
                   <p>
-                     Foi em agosto que palhaços imunizados com duas doses
-                     vacinais contra a Covid-19 finalmente iniciaram a retomada
-                     presencial aos hospitais. Uma conquista emocionante para
-                     quem estava desde março de 2020 atendendo a distância.
+                     No Rio de Janeiro, onde habitualmente convidamos companhias
+                     artísticas locais a adaptarem seus espetáculos para o
+                     ambiente hospitalar, criamos o projeto “Plateias
+                     Hospitalares Convida”.
+                  </p>
+                  <p>
+                     Números artísticos foram apresentados de maneira virtual
+                     para funcionários dos hospitais com o propósito de manter o
+                     vínculo e o projeto vivo.
                   </p>
                </div>
             </Section>
             <SectionDepoiments>
                <Depoiment>
-                  “É uma emoção "andar" pelos corredores e ver todos trabalhando
-                  depois de um ano. Em um tempo tão louco, o contato com o outro
-                  é essencial para a saúde e a sanidade.”
-                  <span>Val Pires / Dr. Valdisney</span>
+                  “FOI A MANEIRA QUE ENCONTRAMOS DE PROPORCIONAR MOMENTOS DE
+                  DESCONTRAÇÃO E RELAXAMENTO AOS PROFISSIONAIS DE SAÚDE. A CADA
+                  EDIÇÃO CONVIDAMOS ARTISTAS QUE CRIARAM JUNTOS, SOB DIREÇÃO
+                  ARTÍSTICA DA DOUTORES DA ALEGRIA, UMA APRESENTAÇÃO EXCLUSIVA
+                  PARA ESSE PÚBLICO.”
+                  <span>
+                     Silvia Contar <br />
+                     Coordenadora da Unidade Rio de Janeiro
+                  </span>
                </Depoiment>
                <ImgDepoimentsBGLeft src={ImageDepoiments} />
             </SectionDepoiments>
             <Section>
                <div>
-                  <p>
-                     <span>Veja aqui a lista de hospitais atendidos </span>{' '}
-                     pelos Doutores da Alegria em <br /> São Paulo, Recife e{' '}
-                     <span>no Rio de Janeiro.</span> <br />
+                  <LastP>
+                     <a href='https://doutoresdaalegria.org.br/hospitais/palhacos-nos-hospitais/' target="blank">Veja aqui a lista de hospitais atendidos </a>
+                     pelos Doutores da Alegria em São Paulo, Recife e
+                     <a href='https://doutoresdaalegria.org.br/hospitais/plateias-hospitalares/' target="blank">no Rio de Janeiro.</a> <br />
                      Total de pessoas beneficiadas com ações presenciais ou
                      híbridas:
-                  </p>
+                  </LastP>
                </div>
             </Section>
 
@@ -89,8 +101,8 @@ const HalfToHalf: React.FC = () => {
                      <p>
                         <span>
                            <img src={TopicoImg} /> 12.561
-                        </span>{' '}
-                        (público direto – crianças) e <span>24.997</span>{' '}
+                        </span>
+                        (público direto – crianças) e <span>24.997</span>
                         (público indireto – acompanhantes, profissionais de
                         saúde e outros públicos).
                      </p>
@@ -103,8 +115,8 @@ const HalfToHalf: React.FC = () => {
                      <p>
                         <span>
                            <img src={TopicoImg} /> 5.147
-                        </span>{' '}
-                        (público direto – crianças) e <span>11.107</span>{' '}
+                        </span>
+                        (público direto – crianças) e <span>11.107</span>
                         (público indireto – acompanhantes, profissionais de
                         saúde e outros públicos).
                      </p>
@@ -117,14 +129,14 @@ const HalfToHalf: React.FC = () => {
                      <p>
                         <span>
                            <img src={TopicoImg} /> 240
-                        </span>{' '}
+                        </span>
                         pessoas e
                      </p>
                      <p>
                         <span>
                            <img src={TopicoImg} /> 220
-                        </span>{' '}
-                        pessoas. (plateias e convidados)
+                        </span>
+                        pessoas. (Plateias e Convida)
                      </p>
                   </div>
                </NumberStates>
@@ -164,8 +176,9 @@ const Body = styled.div`
 const Section = styled.div`
    margin: auto;
    max-width: 1441px;
+   width: 100%;
    display: flex;
-   padding: 0 5%;
+   padding: 0 10px;
    position: relative;
 
    h1 {
@@ -178,11 +191,14 @@ const Section = styled.div`
 
    div {
       > img {
-         width: 90%;
+         max-width: 428px;
+         @media (max-width: 500px) {
+            max-width: 370px;
+         }
       }
 
       > p {
-         margin-top: 50px;
+         margin-top: 30px;
          max-width: 620px;
          font-family: 'Roboto Condensed';
          font-style: normal;
@@ -193,11 +209,14 @@ const Section = styled.div`
 
          @media (max-width: 400px) {
             margin-top: 30px;
+            max-width: 350px;
          }
 
-         > span {
+         > a {
             background-color: #f162a5;
             color: #fff;
+            cursor: pointer;
+            text-decoration: none;
          }
       }
    }
@@ -241,9 +260,6 @@ const FooterContainer = styled.div`
 const ImgPalhacos = styled.img`
    position: absolute;
    right: 0;
-   width: 35%;
-   margin-top: 200px;
-   max-width: 500px;
 
    @media (max-width: 1050px) {
       display: none;
@@ -282,7 +298,7 @@ const ImgDepoimentsBGLeft = styled(ImgDepoimentsBG)`
 `
 
 const Depoiment = styled.p`
-   max-width: 425px;
+   max-width: 500px;
    width: 100%;
    top: 30px;
    position: absolute;
@@ -317,12 +333,17 @@ const Depoiment = styled.p`
       right: 0;
       padding: 0 15px;
    }
+
+   @media (max-width: 500px) {
+      margin-top: -60px;
+   }
 `
 const NumberStates = styled.div`
+   max-width: 1158px;
    width: 100%;
    margin-top: 40px;
    display: flex;
-   gap: 20px;
+   gap: 10px;
    flex-wrap: wrap;
    justify-content: space-between;
 
@@ -337,7 +358,7 @@ const NumberStates = styled.div`
          display: flex;
          align-items: center;
          text-align: center;
-
+         max-height: 35px;
          h1 {
             font-family: 'Roboto Condensed';
             font-style: normal;
@@ -366,5 +387,18 @@ const NumberStates = styled.div`
          color: #000000 !important;
          background: none !important;
       }
+   }
+`
+
+const LastP = styled.p`
+   max-width: 491px !important;
+   width: 100%;
+
+   span{
+
+   }
+
+   @media (max-width: 500px) {
+      margin-top: 80px !important;
    }
 `

@@ -98,9 +98,11 @@ const Section = styled.div`
       color: #303030;
    }
 
-   span {
+ 
+   a{
       background-color: #f162a5;
       color: #fff;
+      cursor: pointer;
    }
    div {
       width: 100%;

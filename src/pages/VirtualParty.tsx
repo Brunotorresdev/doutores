@@ -15,35 +15,53 @@ const VirtualParty: React.FC = () => {
          <Body>
             <Section>
                <div>
-                  <ImgTitle src={ImgTitleSection} alt="Imagina imaginar?" />
-                  <h1>Documentário e Festival Miolo Mole celebram marco</h1>
-                  <p>
-                     A <span>edição virtual do Conta Causos</span> marcou o
-                     início da festa, com palhaços narrando ao vivo <br />{' '}
-                     histórias significativas da nossa trajetória.
-                     <span>Assista aqui.</span>
-                     <br />
-                     <br />
-                     Depois veio a segunda edição do{' '}
-                     <span>Festival Miolo Mole</span>, que combinou
-                     entretenimento e conteúdo <br /> educativo para celebrar os
-                     30 anos e arrecadar recursos para a causa. <br />
-                     <br />E o{' '}
-                     <span>documentário ‘O Ano em Que a Terra Parou’</span>{' '}
-                     mostra os bastidores da Doutores da Alegria <br /> durante
-                     a pandemia, em 25 minutos que equilibram momentos
-                     emocionantes com ações
-                     <br /> práticas que mostraram o protagonismo da associação
-                     naquele ano.
-                  </p>
-                  <h1>Um balanço de 30 anos</h1>
-                  <p>
-                     O impacto alcançado em três décadas pela organização pode
-                     ser traduzido em números.
-                     <br /> Conheça nossos principais resultados em termos de
-                     público nos hospitais, teatros, nas ruas, em empresas e
-                     outros palcos improváveis.
-                  </p>
+                  <div>
+                     <ImgTitle src={ImgTitleSection} alt="Imagina imaginar?" />
+
+                     <h1>Documentário e Festival Miolo Mole celebram marco</h1>
+                     <p>
+                        A{' '}
+                        <a
+                           href="https://www.youtube.com/watch?v=1setaV-sbgY"
+                           target="blank"
+                        >
+                           edição virtual do Conta Causos
+                        </a>{' '}
+                        marcou o início da festa, com palhaços narrando ao vivo
+                        histórias significativas da nossa trajetória.
+                        <a> Assista aqui.</a>
+                        <br />
+                        <br />
+                        Depois veio a segunda edição do{' '}
+                        <a
+                           href="https://www.youtube.com/watch?v=eDcRxSPUXVE"
+                           target="blank"
+                        >
+                           Festival Miolo Mole
+                        </a>
+                        , que combinou entretenimento e conteúdo educativo para
+                        celebrar os 30 anos e arrecadar recursos para a causa.{' '}
+                        <br />
+                        <br />E o{' '}
+                        <a
+                           href="https://www.youtube.com/watch?v=F6ETt11TD4M"
+                           target="blank"
+                        >
+                           documentário ‘O Ano em Que a Terra Parou’
+                        </a>{' '}
+                        mostra os bastidores da Doutores da Alegria durante a
+                        pandemia, em 25 minutos que equilibram momentos
+                        emocionantes com ações práticas que mostraram o
+                        protagonismo da associação naquele ano.
+                     </p>
+                     <h1>Um balanço de 30 anos</h1>
+                     <p>
+                        O impacto alcançado em três décadas pela organização
+                        pode ser traduzido em números. Conheça nossos principais
+                        resultados em termos de público nos hospitais, teatros,
+                        nas ruas, em empresas e outros palcos improváveis.
+                     </p>
+                  </div>
                   <TableImg src={ImgTable} alt="" />
                </div>
                <ImgPalhacos src={ImgAlegria} alt="" />
@@ -86,6 +104,12 @@ const Section = styled.div`
       flex-direction: column-reverse;
    }
 
+   div {
+      div {
+         max-width: 676px;
+      }
+   }
+
    h1 {
       font-family: 'Roboto Condensed';
       font-style: normal;
@@ -95,9 +119,12 @@ const Section = styled.div`
       margin-top: 40px;
       margin-bottom: 20px;
    }
-   span {
+
+   a {
       background-color: #f162a5;
       color: #fff;
+      cursor: pointer;
+      text-decoration: none;
    }
    div > p {
       max-width: 676px;
@@ -164,12 +191,12 @@ const TableImg = styled.img`
    width: 100%;
 `
 const ImgTitle = styled.img`
-max-width: 600px;
+   max-width: 600px;
 
-@media(max-width: 610px){
-   max-width: 500px;
-}
-@media(max-width: 510px){
-   max-width: 350px;
-}
+   @media (max-width: 610px) {
+      max-width: 500px;
+   }
+   @media (max-width: 510px) {
+      max-width: 350px;
+   }
 `

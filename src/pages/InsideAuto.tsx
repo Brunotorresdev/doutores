@@ -33,76 +33,72 @@ const InsideAuto: React.FC = () => {
             <BodyLeftSide>
                <img src={ImgText} alt="" />
 
-               <h1>O novo código de ética e nosso jeito de ser</h1>
+               <div>
+                  <h1>O novo código de ética e nosso jeito de ser</h1>
 
-               <p>
-                  Duas ações estratégicas lideradas pela diretoria se
-                  concretizaram nos últimos anos. São  diretrizes
-                  internas, construídas coletivamente sob a luz da tarefa e dos
-                  valores institucionais,
-                 que orientam a gestão de pessoas e a ética comum
-                  empregada em todas as nossas ações.
-               </p>
+                  <p>
+                     Duas ações estratégicas lideradas pela diretoria se
+                     concretizaram nos últimos anos. São diretrizes internas,
+                     construídas coletivamente sob a luz da tarefa e dos valores
+                     institucionais, que orientam a gestão de pessoas e a ética
+                     comum empregada em todas as nossas ações.
+                  </p>
 
-               <h1>Jeito de Ser</h1>
+                  <h1>Jeito de Ser</h1>
 
-               <p>
-                  A publicação estabelece uma base comum para processos de
-                  gestão de pessoas. Iniciado em
-                 2019 com a construção de competências e comportamentos,
-                  em parceria com a Arquitetura RH,
-                 o processo se desenvolveu com a participação de um
-                  grupo multidisciplinar. O documento
-                 ganhou versão final em setembro de 2020. <br />
-                  <br />
-                  O Jeito de Ser estabelece condutas e reúne seis competências
-                  que são esperadas dos
-                   colaboradores da associação. São elas: respeito à
-                  diversidade, cuidado, coerência, diálogo,
-                   cocriação e “mais é menos e menos é mais”.
-               </p>
+                  <p>
+                     A publicação estabelece uma base comum para processos de
+                     gestão de pessoas. Iniciado em 2019 com a construção de
+                     competências e comportamentos, em parceria com a
+                     Arquitetura RH, o processo se desenvolveu com a
+                     participação de um grupo multidisciplinar. O documento
+                     ganhou versão final em setembro de 2020. <br />
+                     <br />O Jeito de Ser estabelece condutas e reúne seis
+                     competências que são esperadas dos colaboradores da
+                     associação. São elas: respeito à diversidade, cuidado,
+                     coerência, diálogo, cocriação e “mais é menos e menos é
+                     mais”.
+                  </p>
 
-               <h1>Código de Integridade e Conduta Ética</h1>
+                  <h1>Código de Integridade e Conduta Ética</h1>
 
-               <p>
-                  Fruto de construção coletiva, o documento reflete discussões
-                  internas iniciadas em 2019 eestabelece parâmetros e
-                  comportamentos aplicados ao ambiente da Doutores da Alegria. O
-                  código debate temas como direitos autorais, recursos
-                  públicos, humor na atualidade, ações
-                  afirmativas, conflito de interesses e relações de
-                  trabalho. <br />
-                  <br />
-                  No item ‘O Palhaço e o Humor’, por exemplo, a associação
-                  espera que palhaços não utilizem o humor para reforçar
-                  preconceitos e não criem piadas de conteúdos machista, racista
-                  ou sexista. <br />
-                  <br />
-                  Em ‘Crianças e Adolescentes: Público Prioritário”, o documento
-                  reforça que os colaboradores da
-                  associação têm o compromisso de respeitar e promover a
-                  defesa dos direitos de crianças eadolescentes, em
-                  especial as em situação de hospitalização, em consonância com
-                  a Declaração
-                  Universal dos Direitos da Criança. <br />
-                  <br />
-                  Em “Direitos Humanos e Ações Afirmativas”, a associação se
-                  compromete a adotar políticas
-                   éticas e transparentes para preenchimento de vagas e de
-                  representatividade em todos os seus
-                   segmentos. <br />
-                  <br />
-                  Neste sentido, busca contemplar a maior diversidade e
-                  pluralidade de pessoas possível entre
-                 negros, mulheres, pessoa com deficiência, idosos,
-                  imigrantes e pessoas que se reconheçam
-                 como membros da comunidade LGBTQIA+. <br />
-                  <br />
-                  Também pretende criar políticas internas para garantir e
-                  resguardar a igualdade de salários e de
-                  benefícios para cargos e funções com atribuições
-                  semelhantes, entre outras ações afirmativas.
-               </p>
+                  <p>
+                     Fruto de construção coletiva, o documento reflete
+                     discussões internas iniciadas em 2019 eestabelece
+                     parâmetros e comportamentos aplicados ao ambiente da
+                     Doutores da Alegria. O código debate temas como direitos
+                     autorais, recursos públicos, humor na atualidade, ações
+                     afirmativas, conflito de interesses e relações de trabalho.{' '}
+                     <br />
+                     <br />
+                     No item ‘O Palhaço e o Humor’, por exemplo, a associação
+                     espera que palhaços não utilizem o humor para reforçar
+                     preconceitos e não criem piadas de conteúdos machista,
+                     racista ou sexista. <br />
+                     <br />
+                     Em ‘Crianças e Adolescentes: Público Prioritário”, o
+                     documento reforça que os colaboradores da associação têm o
+                     compromisso de respeitar e promover a defesa dos direitos
+                     de crianças eadolescentes, em especial as em situação de
+                     hospitalização, em consonância com a Declaração Universal
+                     dos Direitos da Criança. <br />
+                     <br />
+                     Em “Direitos Humanos e Ações Afirmativas”, a associação se
+                     compromete a adotar políticas éticas e transparentes para
+                     preenchimento de vagas e de representatividade em todos os
+                     seus segmentos. <br />
+                     <br />
+                     Neste sentido, busca contemplar a maior diversidade e
+                     pluralidade de pessoas possível entre negros, mulheres,
+                     pessoa com deficiência, idosos, imigrantes e pessoas que se
+                     reconheçam como membros da comunidade LGBTQIA+. <br />
+                     <br />
+                     Também pretende criar políticas internas para garantir e
+                     resguardar a igualdade de salários e de benefícios para
+                     cargos e funções com atribuições semelhantes, entre outras
+                     ações afirmativas.
+                  </p>
+               </div>
             </BodyLeftSide>
             <QuatroPalhacosImg src={ImgQuatroPalhacos} />
          </Body>
@@ -147,6 +143,7 @@ const Header = styled.div`
    }
 `
 
+
 const Body = styled.div`
    max-width: 1441px;
    margin: auto;
@@ -168,7 +165,7 @@ const Body = styled.div`
    }
 `
 const BodyLeftSide = styled.div`
-   max-width: 712px;
+   max-width: 800px;
    width: 100%;
 
    p {
@@ -183,12 +180,16 @@ const BodyLeftSide = styled.div`
       max-width: 664px;
       width: 100%;
    }
+div{
+   max-width: 690px;
+}
+
    img {
-      max-width: 680px;
+      max-width: 800px;
       width: 100%;
       height: 83px;
       @media (max-width: 710px) {
-         height: 50px;
+         height: 60px;
       }
    }
 
@@ -244,13 +245,16 @@ const QuatroPalhacosImg = styled.img`
    position: absolute;
    right: 0;
    margin-top: 170px;
+   max-width: 380px;
+      width: 100%;
 
    @media (max-width: 1250px) {
       position: relative;
       margin: 0;
    }
 
-   @media (max-width: 1100px) {
-      display: none;
+   @media (max-width: 500px) {
+      max-width: 370px;
+      width: 100%;
    }
 `

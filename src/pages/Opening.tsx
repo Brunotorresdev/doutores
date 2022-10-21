@@ -39,7 +39,7 @@ const Opening: React.FC = () => {
                   existência com o desafio de sobreviver em um momento de
                   aprofundamento da pandemia e de recursos escassos na área
                   cultural. <br /> <br /> Atravessar o ano foi tal qual aquela
-                  música: “A esperança dança na corda bamba de sombrinha”.{' '}
+                  música: “ <a>A esperança dança na corda bamba de sombrinha</a>”.{' '}
                   <br /> <br /> Lendo esta publicação, você descobrirá como a
                   organização de palhaços inovou no digital para superar o
                   distanciamento de crianças internadas e profissionais na linha
@@ -65,7 +65,7 @@ const Opening: React.FC = () => {
                   um país que ofereça um futuro com mais dignidade para crianças
                   e adolescentes brasileiros. <br /> <br /> Leia o texto do
                   nosso diretor presidente, Luis Vieira da Rocha, na íntegra
-                  aqui.
+                  <a>aqui</a>.
                </p>
             </BodyLeftSide>
             <ImgLuiz src={ImgLuizVieira} />
@@ -145,7 +145,14 @@ const BodyLeftSide = styled.div`
    }
    img {
       width: 407px;
-      height: 83px;
+      height: 70px;
+   }
+
+   a {
+      background-color: #f162a5;
+      color: #fff;
+      cursor: pointer;
+      text-decoration: none;
    }
 
    h1 {
@@ -199,16 +206,12 @@ const FooterContainer = styled.div`
 `
 
 const ImgLuiz = styled.img`
-   max-width: 489px;
    width: 100%;
-   max-height: 623px;
-   height: 100%;
-
+   margin-top: 100px;
    @media(max-width: 515px){
+      margin-top: 0;
       max-width: 350px;
-   width: 100%;
-   max-height: 480px;
-   height: 100%;
+      max-height: 500px;
    }
 `
 const ImgTitle = styled.img`

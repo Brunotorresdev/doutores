@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import ImgParceiros from '../assets/images/parceiros.png'
 import ImgLogo1 from '../assets/images/logo1.png'
 import ImgLogo2 from '../assets/images/logo2.png'
-//import ImgLogo3 from '../assets/images/logo3.png'
+import ImgLogo3 from '../assets/images/logo3.png'
 import ImgLogo4 from '../assets/images/logo4.png'
 import ImgLogo5 from '../assets/images/logo5.png'
 import ImgLogo6 from '../assets/images/logo6.png'
@@ -57,6 +57,7 @@ const Partners:React.FC = () => {
             <ContainerLogos>
                <img src={ImgLogo1} alt="" />
                <img src={ImgLogo2} alt="" />
+               <img src={ImgLogo3} alt="" />
                <img src={ImgLogo4} alt="" />
             </ContainerLogos>
             <div>
@@ -142,7 +143,7 @@ const Partners:React.FC = () => {
                   <li>SANTA LUZIA</li>
                </ul>
             </ContainerGentileza>
-            <TitleSection>PROAC 2020/2021</TitleSection>
+            <TitleSection>PROMAC/SP 2020/2021</TitleSection>
             <TitleCenter>narigada</TitleCenter>
             <ContainerLogosTwo>
                <img src={ImgLogo14} alt="" />

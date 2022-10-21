@@ -5,6 +5,7 @@ import ImgLogo from '../assets/images/logo-doutores-header.png'
 import ImgMenu from '../assets/images/menubar.png'
 import ModalMenu from './ModalMenu'
 import HeaderImg from '../assets/images/header-image.png'
+import { useNavigate } from 'react-router-dom'
 
 type Props = {
    children?: JSX.Element | JSX.Element[]
@@ -12,6 +13,8 @@ type Props = {
 
 const BaseLayout: React.FC<Props> = ({ children }: Props) => {
    const [modal, setModal] = useState(false)
+
+   const navigate = useNavigate()
 
    const onClose = () => {
       setModal(false)
@@ -21,7 +24,7 @@ const BaseLayout: React.FC<Props> = ({ children }: Props) => {
       <BodyComponents>
          <HeaderContainer>
             <Header>
-               <img src={ImgLogo} alt="" />
+               <img onClick={() => navigate('/')} src={ImgLogo} alt="" />
                <img onClick={() => setModal(!modal)} src={ImgMenu} alt="" />
             </Header>
             {modal && <ModalMenu onClose={onClose} />}
@@ -48,6 +51,7 @@ const HeaderContainer = styled.div`
    width: 100%;
    z-index: 3;
    box-sizing: border-box;
+   cursor: pointer;
 `
 
 const Header = styled.div`

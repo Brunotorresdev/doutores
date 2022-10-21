@@ -68,7 +68,7 @@ const ModalMenu: React.FC<Props> = ({ onClose }) => {
                   </a>
                   <a onClick={() => navigate('/equipe')}>Equipe</a>
                   <a onClick={() => navigate('/parceiros')}>Parceiros</a>
-                  <a onClick={() => navigate('/socios')}>SÓCIOS</a>
+                  <a onClick={() => navigate('/socios')}>Sócios</a>
                   <a onClick={() => navigate('/expediente')}>Expediente</a>
                </div>
             </ModalText>

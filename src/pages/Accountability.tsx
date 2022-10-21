@@ -47,7 +47,7 @@ const Accountability: React.FC = () => {
                   <InfosGraphics>
                      <GraphicTwoImg src={ImgGraphicTwo} alt="" />
                      <PalhacoMobile src={ImgPalhacoMobile} alt="" />
-                     <img src={ImgGraphicThree} alt="" />
+                     <GraphicThreeImg src={ImgGraphicThree} alt="" />
                   </InfosGraphics>
                   <InfosGraphicsTwo>
                      <div>
@@ -106,6 +106,16 @@ const GraphicTwoImg = styled.img`
    }
 `
 
+const GraphicThreeImg = styled.img`
+   display: none;
+   max-width: 550px;
+   @media (max-width: 1085px) {
+      display: block;
+      width: 100%;
+      margin: 20px 0 20px 20px !important;
+   }
+`
+
 const Body = styled.div`
    margin-top: -16%;
    padding-top: 16%;
@@ -129,7 +139,7 @@ const Section = styled.div`
       margin-bottom: 15px;
 
       @media (max-width: 400px) {
-        margin: 15px 0 0 0;
+         margin: 15px 0 0 0;
       }
    }
    h3 {
@@ -203,9 +213,9 @@ const ContainerImgPalhacos = styled.div`
 
 const PalhacosImg = styled.img`
    margin: 30px 0;
-   max-width: 760px;
+   max-width: 782px;
    width: 100%;
-   max-height: 456px;
+   max-height: 569px;
 `
 
 const ImageFest = styled.img`
@@ -228,6 +238,10 @@ const InfosGraphics = styled.div`
       }
       :last-child {
          max-height: 461px;
+      }
+      @media (max-width: 400px) {
+         max-width: 310px;
+         margin: auto;
       }
    }
 `

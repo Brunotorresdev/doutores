@@ -57,26 +57,26 @@ const OurMeeting: React.FC = () => {
 
             <SectionDepoiments>
                <Depoiment>
-                  “É uma emoção "andar" pelos corredores e ver todos trabalhando
-                  depois de um ano. Em um tempo tão louco, o contato com o outro
-                  é essencial para a saúde e a sanidade.”
-                  <span>Val Pires / Dr. Valdisney</span>
+                  “TALVEZ DEMORE UM POUCO MAIS PRA GENTE CONSEGUIR VER DE NOVO A
+                  BOCA SORRINDO, MAS TENHO CERTEZA DE QUE NUNCA MAIS
+                  DESAPRENDEREMOS DE SORRIR COM OS OLHOS.”
+                  <span>Wagner Montegro / Dr. Wago Ninguém</span>
                </Depoiment>
                <ImgDepoimentsBGLeft src={ImageDepoiments} />
             </SectionDepoiments>
             <Section>
                <div>
                   <p>
-                     Foi em agosto que palhaços imunizados com duas doses
-                     vacinais contra a Covid-19 finalmente iniciaram a retomada
-                     presencial aos hospitais. Uma conquista emocionante para
-                     quem estava desde março de 2020 atendendo a distância.
+                     A Escola também ofereceu formação especializada para 24
+                     artistas e estudantes de arte, tendo o palhaço como
+                     território e expressão. O curso Formação Básica de Palhaço
+                     percorreu cinco meses com 189h de formação gratuita.
                   </p>
                </div>
             </Section>
             <Section>
                <div>
-                  <Title>Na ponta do lápis</Title>
+                  <Title>NA PONTA DO LÁPIS</Title>
                   <p>
                      276 pessoas assistiram a Mocrea nos espaços de cultura
                      <br /> 874 pessoas assistiram Cores e Dores – Uma Ciranda
@@ -120,9 +120,14 @@ const Body = styled.div`
 const Section = styled.div`
    margin: auto;
    max-width: 1441px;
+   width: 100%;
    display: flex;
-   padding: 0 5%;
+   padding: 0 10px;
    position: relative;
+
+   @media (max-width: 1050px) {
+      flex-direction: column-reverse;
+   }
 
    div {
       > h1 {
@@ -133,15 +138,17 @@ const Section = styled.div`
          font-size: 28px;
          line-height: 34px;
          color: #303030;
+         max-width: 380px;
       }
 
       > img {
          width: 90%;
+         height: 60px;
       }
 
       > p {
          margin-top: 30px;
-         max-width: 620px;
+         max-width: 550px;
          font-family: 'Roboto Condensed';
          font-style: normal;
          font-weight: 500;
@@ -195,11 +202,9 @@ const FooterContainer = styled.div`
 const ImgPalhacos = styled.img`
    position: absolute;
    right: 0;
-   width: 40%;
-   max-width: 500px;
 
    @media (max-width: 1050px) {
-      display: none;
+      position: relative;
    }
 `
 const SectionDepoiments = styled(Section)`
@@ -220,7 +225,7 @@ const ImgDepoimentsBGLeft = styled.img`
 `
 
 const Depoiment = styled.p`
-   max-width: 425px;
+   max-width: 480px;
    width: 100%;
    top: 30px;
    position: absolute;

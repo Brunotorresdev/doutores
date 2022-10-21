@@ -16,7 +16,7 @@ const Emergency: React.FC = () => {
          <Body>
             <Section>
                <div>
-                  <img src={ImgEmergency} alt="" />
+                  <TitleImg src={ImgEmergency} alt="" />
                   <p>
                      2021 foi desafiador para todas as organizações da sociedade
                      civil. Seja pelo cenário de incertezas, pelo aprofundamento
@@ -37,7 +37,7 @@ const Emergency: React.FC = () => {
                      recursos liberados para realização das nossas atividades.{' '}
                      <br />
                      <br />
-                     Leia o texto da diretoria na íntegra <span>aqui.</span>
+                     Leia o texto da diretoria na íntegra <a>aqui.</a>
                   </p>
                </div>
                <ImageFest src={ImgRightSide} alt="" />
@@ -78,9 +78,10 @@ const Section = styled.div`
    align-items: center;
    padding: 0 15px;
 
-   span {
+   a{
       background-color: #f162a5;
       color: #fff;
+      cursor: pointer;
    }
    div {
       width: 100%;
@@ -102,6 +103,13 @@ const Section = styled.div`
       }
    }
 `
+
+const TitleImg = styled.img`
+   @media (max-width: 500px) {
+      height: 70px;
+   }
+`
+
 const Footer = styled.div`
    width: 100%;
    background-color: #ffffff;

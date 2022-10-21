@@ -23,7 +23,14 @@ const AllVirtual: React.FC = () => {
                      não estivessem totalmente imunizados e não fosse seguro
                      —tanto para o hospital quanto para nossos profissionais—
                      retomar as visitas presenciais, seguiríamos com os projetos
-                     virtualmente, <span>como havia sido em 2020.</span>
+                     virtualmente,{' '}
+                     <a
+                        href="https://doutoresdaalegria.org.br/doutores-em-casa/"
+                        target="blank"
+                     >
+                        
+                        como havia sido em 2020.
+                     </a>
                   </p>
                   <p>
                      Realizamos cinco edições da live “Conta Causos”, que era
@@ -50,9 +57,12 @@ const AllVirtual: React.FC = () => {
                   </p>
                   <p>
                      Todos os{' '}
-                     <span>
+                     <a
+                        href="https://doutoresdaalegria.org.br/hospitais/palhacos-nos-hospitais/"
+                        target="blank"
+                     >
                         hospitais públicos atendidos em São Paulo e em Recife
-                     </span>{' '}
+                     </a>{' '}
                      passaram a receber visitas virtuais. A dupla de artistas
                      interagia online com pacientes por meio de tablets, em
                      projeto que começou como piloto em agosto de 2020.
@@ -124,9 +134,11 @@ const Section = styled.div`
       line-height: 34px;
    }
 
-   span {
+   a {
       background-color: #f162a5;
       color: #fff;
+      cursor: pointer;
+      text-decoration: none;
    }
 
    div > p {
@@ -142,8 +154,13 @@ const Section = styled.div`
 
    > div > img {
       width: 100%;
+      @media (max-width: 500px) {
+         width: 111%;
+         height: 100px;
+      }
    }
 `
+
 const Footer = styled.div`
    width: 100%;
    border-top: 2px solid black;
@@ -198,7 +215,7 @@ const ImgData = styled.img`
    }
 `
 const ImgDataMobile = styled.img`
-display: none;
+   display: none;
    @media (max-width: 500px) {
       display: block;
       width: 100%;
@@ -269,10 +286,10 @@ const DepoimentBottom = styled(DepoimentTop)`
    }
 `
 const Signature = styled.p`
-font-family: 'Roboto Condensed';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 32px;
-color: #000000;
+   font-family: 'Roboto Condensed';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 32px;
+   color: #000000;
 `

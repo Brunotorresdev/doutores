@@ -36,16 +36,30 @@ const EmbraceCause: React.FC = () => {
                   <div>
                      <HeaderImg src={ImgHeart} />
                      <p>
-                        <span>
+                        <a
+                           href="https://doar.doutoresdaalegria.org.br/ajude"
+                           target="blank"
+                        >
                            Faça uma doação única ou torne-se sócio mantenedor
-                        </span>
+                        </a>
                      </p>
                   </div>
                   <div>
                      <HeaderImg src={ImgHeart} />
                      <p>
-                        <span>Patrocine como empresa</span> ou{' '}
-                        <span>contrate intervenções e palestras</span>
+                        <a
+                           href="https://doutoresdaalegria.org.br/abrace-a-causa/doar/?tipo=pj"
+                           target="blank"
+                        >
+                           Patrocine como empresa
+                        </a>{' '}
+                        ou{' '}
+                        <a
+                           href="https://doutoresdaalegria.org.br/abrace-a-causa/leve-doutores-para-a-sua-empresa/"
+                           target="blank"
+                        >
+                           contrate intervenções e palestras
+                        </a>
                      </p>
                   </div>
                   <div>
@@ -53,14 +67,24 @@ const EmbraceCause: React.FC = () => {
                      <p>
                         Entre em contato para informações sobre doações e
                         parcerias: <br />{' '}
-                        <span>parcerias@doutoresdaalegria.org.br.</span>
+                        <a
+                           href="parcerias@doutoresdaalegria.org.br"
+                           target="blank"
+                        >
+                           parcerias@doutoresdaalegria.org.br.
+                        </a>
                      </p>
                   </div>
                   <PartnersOfJoy>
                      <h1>SÓCIOS DA ALEGRIA</h1>
                      <p>
                         Para conhecer quem ajuda Doutores da Alegria, <br />{' '}
-                        <span>acesse a lista de sócios.</span>
+                        <a
+                           href="https://docs.google.com/spreadsheets/d/1TVlNk5ZVshgEAuNscbERQ0hUvgcK13rn/edit?usp=sharing&ouid=110952349873597834753&rtpof=true&sd=true"
+                           target="blank"
+                        >
+                           acesse a lista de sócios.
+                        </a>
                      </p>
                   </PartnersOfJoy>
                </div>
@@ -90,9 +114,9 @@ const Body = styled.div`
    margin-top: -16%;
    padding-top: 16%;
    padding-bottom: 150px;
-   @media(max-width: 1100px){
+   @media (max-width: 1100px) {
       margin-top: -26%;
-   padding-top: 26%;
+      padding-top: 26%;
    }
 `
 const Section = styled.div`
@@ -107,10 +131,12 @@ const Section = styled.div`
       font-size: 28px;
       line-height: 34px;
    }
-   span {
+   a {
       padding: 5px 0;
       background-color: #f162a5;
       color: #fff;
+      cursor: pointer;
+      text-decoration: none;
    }
    div > p {
       margin-top: 50px;
@@ -187,12 +213,13 @@ const PartnersOfJoy = styled.div`
    }
 `
 const ImgTitle = styled.img`
-max-width: 600px;
+   max-width: 600px;
 
-@media(max-width: 610px){
-   max-width: 500px;
-}
-@media(max-width: 510px){
-   max-width: 350px;
-}
+   @media (max-width: 610px) {
+      max-width: 500px;
+   }
+   @media (max-width: 510px) {
+      max-width: 350px;
+      height: 60px;
+   }
 `

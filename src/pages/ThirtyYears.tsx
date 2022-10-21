@@ -279,7 +279,12 @@ const ThirtyYears: React.FC = () => {
                <div>
                   <Title>Um tiquinho de história</Title>
                   <p>
-                     <span>Acompanhe aqui a linha do tempo da organização</span>
+                     <a
+                        href="https://doutoresdaalegria.org.br/conheca/nossa-historia/"
+                        target="blank"
+                     >
+                        Acompanhe aqui a linha do tempo da organização
+                     </a>
                      , que começa em 1991 no Hospital Nossa Senhora de Lourdes,
                      em São Paulo.
                   </p>
@@ -348,9 +353,11 @@ const Section = styled.div`
          line-height: 28px;
          color: #000000;
 
-         > span {
+         > a {
             background-color: #f162a5;
             color: #fff;
+            cursor: pointer;
+            text-decoration: none;
          }
       }
    }
@@ -411,7 +418,7 @@ const SectionDepoiments = styled.div`
    column-count: 2;
    column-gap: 50px;
 
-   @media (max-width:680px){
+   @media (max-width: 680px) {
       column-count: 1;
    }
 `

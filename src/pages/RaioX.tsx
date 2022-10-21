@@ -16,7 +16,7 @@ const Raiox: React.FC = () => {
          <Body>
             <DescriptionsContainer>
                <div>
-                  <img src={RaioXLogo} />
+                  <TitleImg src={RaioXLogo} />
                   <Subtitle>Retrato da estrutura e das atividades</Subtitle>
 
                   <Space />
@@ -30,11 +30,12 @@ const Raiox: React.FC = () => {
                   <P>
                      - Reconhecida pelo Prêmio Criança (Fundação Abrinq), pelo
                      Prêmio Cultura e Saúde (Ministério da Cultura e Ministério
-                     da Saúde) e pelo Prêmio Melhores ONGs (Instituto Doar); -
-                     Atua em São Paulo, Recife e Rio de Janeiro e inspirou mais
-                     de 1.500 iniciativas pelo país; - Atendeu cerca de 2,3
-                     milhões de crianças hospitalizadas; - Alcançou mais de 140
-                     mil pessoas com o Plateias Hospitalares.
+                     da Saúde) e pelo Prêmio Melhores ONGs (Instituto Doar);{' '}
+                     <br /> - Atua em São Paulo, Recife e Rio de Janeiro e
+                     inspirou mais de 1.500 iniciativas pelo país; <br /> -
+                     Atendeu cerca de 2,3 milhões de crianças hospitalizadas;{' '}
+                     <br /> - Alcançou mais de 140 mil pessoas com o Plateias
+                     Hospitalares.
                   </P>
                </div>
                <img src={RaioX} />
@@ -141,17 +142,17 @@ const Raiox: React.FC = () => {
                </Example>
             </ExamplesContainer>
             <Footer>
-            <FooterContainer>
-               <div onClick={() => navigate('/abertura')}>
-                  <img src={ImgArrowLeft} alt="" />
-                  <p>ABERTURA</p>
-               </div>
-               <div onClick={() => navigate('/nossa-bandeira')}>
-                  <p>NOSSA BANDEIRA</p>
-                  <img src={ImgArrowRight} alt="" />
-               </div>
-            </FooterContainer>
-         </Footer>
+               <FooterContainer>
+                  <div onClick={() => navigate('/abertura')}>
+                     <img src={ImgArrowLeft} alt="" />
+                     <p>ABERTURA</p>
+                  </div>
+                  <div onClick={() => navigate('/nossa-bandeira')}>
+                     <p>NOSSA BANDEIRA</p>
+                     <img src={ImgArrowRight} alt="" />
+                  </div>
+               </FooterContainer>
+            </Footer>
          </Body>
       </BaseLayout>
    )
@@ -167,18 +168,20 @@ const Body = styled.div`
    padding-top: 16%;
    min-height: 600px;
    padding-right: 10px;
-   @media(max-width: 1270px){
+   @media (max-width: 1270px) {
       margin-top: -20%;
-   padding-top: 20%;
+      padding-top: 20%;
    }
-   @media(max-width: 630px){
+   @media (max-width: 630px) {
       margin-top: -26%;
-   padding-top: 26%;
+      padding-top: 26%;
    }
 `
 
 const DescriptionsContainer = styled.div`
+   max-width: 1441px;
    width: 100%;
+   margin: auto;
    display: flex;
    justify-content: space-between;
    padding: 0 15px;
@@ -188,14 +191,21 @@ const DescriptionsContainer = styled.div`
       height: 60%;
       max-height: 628px;
       max-width: 586px;
-      @media(max-width: 500px){
+      @media (max-width: 500px) {
          width: 100%;
+         margin-right: 0;
       }
    }
 
    @media (max-width: 1000px) {
       flex-direction: column-reverse;
       align-items: center;
+   }
+`
+
+const TitleImg = styled.img`
+   @media (max-width: 500px) {
+      height: 70px;
    }
 `
 
@@ -228,7 +238,7 @@ const ExamplesContainer = styled.div`
    width: 100%;
    margin-top: 60px;
    background-image: url(${BGContainer});
-   background-size: cover;
+   background-size: contain;
    background-repeat: no-repeat;
    min-height: 600px;
    padding: 0 16%;
@@ -243,9 +253,8 @@ const ExamplesContainer = styled.div`
    @media (max-width: 1000px) {
       flex-direction: column-reverse;
       align-items: center;
-   }
-   @media (max-width: 500px) {
-      padding: 5%;
+      background-image: none;
+      padding: 0 10px;
    }
 `
 
@@ -296,6 +305,7 @@ const Example = styled.div`
 
    @media (max-width: 1000px) {
       width: 100%;
+      margin: 0;
    }
 `
 
@@ -335,4 +345,3 @@ const FooterContainer = styled.div`
       margin: 0 5px;
    }
 `
-

@@ -21,17 +21,22 @@ const Imagine: React.FC = () => {
                   </h1>
                   <p>
                      Em maio, lançamos uma{' '}
-                     <span>campanha virtual para arrecadar recursos</span> e dar
-                     luz ao momento inédito vivenciado pela organização.{' '}
+                     <a
+                        href="https://doutoresdaalegria.org.br/blog/voce-ja-imaginou-o-hospital-sem-doutores-da-alegria/"
+                        target="blank"
+                     >
+                        campanha virtual para arrecadar recursos
+                     </a>{' '}
+                     e dar luz ao momento inédito vivenciado pela organização.{' '}
                      <br />
                      <br /> À espera da tramitação do Plano Anual na Lei de
-                     Incentivo à Cultura, já estávamos há cinco meses
-                     usando o fundo de reserva financeiro, construído
-                     durante quinze anos para situações emergenciais. Ele se
-                     esgotaria em pouco tempo. <br />
+                     Incentivo à Cultura, já estávamos há cinco meses usando o
+                     fundo de reserva financeiro, construído durante quinze anos
+                     para situações emergenciais. Ele se esgotaria em pouco
+                     tempo. <br />
                      <br /> A sociedade reagiu. Influenciadores digitais se
-                     engajaram na causa, assim como pessoas que fizeram
-                     doações e ajudaram a manter o trabalho que é gratuito para{' '}
+                     engajaram na causa, assim como pessoas que fizeram doações
+                     e ajudaram a manter o trabalho que é gratuito para{' '}
                      hospitais.
                   </p>
                </div>
@@ -80,12 +85,14 @@ const Section = styled.div`
       line-height: 34px;
    }
 
-   span {
+   a {
       background-color: #f162a5;
       color: #fff;
+      cursor: pointer;
+      text-decoration: none;
    }
 
-   div{
+   div {
       max-width: 664px;
       width: 100%;
    }
@@ -99,7 +106,6 @@ const Section = styled.div`
       font-size: 18px;
       line-height: 28px;
       color: #000000;
-   
    }
 `
 const Footer = styled.div`
@@ -151,9 +157,9 @@ const ImgPalhacos = styled.img`
    }
 `
 const ImgTitle = styled.img`
-max-width: 476px;
+   max-width: 476px;
 
-@media(max-width: 480px){
-   max-width: 300px;
-}
+   @media (max-width: 480px) {
+      max-width: 300px;
+   }
 `
