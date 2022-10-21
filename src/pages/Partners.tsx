@@ -115,27 +115,9 @@ const Partners:React.FC = () => {
             </ContainerPatrocinador>
             <ContainerTitles>
                <TitleCenter>PATROCINADOR GENTILEZA</TitleCenter>
-               <TitleCenterRight>PATROCINADOR GENTILEZA</TitleCenterRight>
             </ContainerTitles>
             <ContainerGentileza>
-               <ul>
-                  <li>COMBUSTRAN</li>
-                  <li>WICKBOLD & NOSSO PÃO</li>
-                  <li>TRANSUNION</li>
-                  <li>SANTA LUZIA</li>
-               </ul>
-               <ul>
-                  <li>COMBUSTRAN</li>
-                  <li>WICKBOLD & NOSSO PÃO</li>
-                  <li>TRANSUNION</li>
-                  <li>SANTA LUZIA</li>
-               </ul>
-               <ul>
-                  <li>COMBUSTRAN</li>
-                  <li>WICKBOLD & NOSSO PÃO</li>
-                  <li>TRANSUNION</li>
-                  <li>SANTA LUZIA</li>
-               </ul>
+               
                <ul>
                   <li>COMBUSTRAN</li>
                   <li>WICKBOLD & NOSSO PÃO</li>
@@ -496,8 +478,7 @@ const ContainerGentileza = styled.div`
    width: 100%;
    margin: auto;
    display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
+   justify-content: center;
    align-items: center;
    margin-bottom: 100px;
 

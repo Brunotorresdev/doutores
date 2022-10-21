@@ -5,6 +5,7 @@ import ImgArrowRight from '../assets/images/arrow-right.png'
 import ImgArrowLeft from '../assets/images/arrow-left.png'
 import ImgAlegria from '../assets/images/img-fest-virtual.png'
 import ImgTable from '../assets/images/img-table-30anos.png'
+import ImgTableMobile from '../assets/images/img-table-30anos-mobile.png'
 import { useNavigate } from 'react-router-dom'
 
 const VirtualParty: React.FC = () => {
@@ -63,6 +64,8 @@ const VirtualParty: React.FC = () => {
                      </p>
                   </div>
                   <TableImg src={ImgTable} alt="" />
+                  <TableImgMobile src={ImgTableMobile} alt="" />
+                  
                </div>
                <ImgPalhacos src={ImgAlegria} alt="" />
             </Section>
@@ -189,7 +192,21 @@ const TableImg = styled.img`
    margin-top: 40px;
    max-width: 1064px;
    width: 100%;
+   @media(max-width: 500px){
+      display:none;
+   }
 `
+
+const TableImgMobile = styled.img`
+   margin-top: 40px;
+   max-width: 1064px;
+   width: 100%;
+   display:none;
+   @media(max-width: 500px){
+      display:block;
+   }
+`
+
 const ImgTitle = styled.img`
    max-width: 600px;
 
