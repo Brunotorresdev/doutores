@@ -11,9 +11,12 @@ import { useState } from 'react'
 import FooterComponent from 'components/FooterComponent'
 import ImgArrowRight from '../assets/images/arrow-right.png'
 import { useNavigate } from 'react-router-dom'
+import { ScrollTop } from 'components/ScrollTop'
 
 const App = (): JSX.Element => {
    const [modal, setModal] = useState(false)
+
+   ScrollTop()
 
    const navigate = useNavigate()
 

@@ -7,10 +7,11 @@ import HeartIcon from '../assets/images/heart-icon.png'
 import { useNavigate } from 'react-router-dom'
 import ImgArrowRight from '../assets/images/arrow-right.png'
 import ImgArrowLeft from '../assets/images/arrow-left.png'
+import { ScrollTop } from 'components/ScrollTop'
 
 const Raiox: React.FC = () => {
    const navigate = useNavigate()
-
+   ScrollTop()
    return (
       <BaseLayout>
          <Body>
@@ -21,7 +22,7 @@ const Raiox: React.FC = () => {
 
                   <Space />
 
-                  <Subtitle>DOUTORES DA ALEGRIA</Subtitle>
+                  <SubtitleDoutores>DOUTORES DA ALEGRIA</SubtitleDoutores>
                   <P>
                      Fundada em 1991 por Wellington Nogueira, a associação atua
                      no universo da saúde pública e propõe a cultura como um
@@ -59,7 +60,7 @@ const Raiox: React.FC = () => {
                <Example>
                   <h2>HOSPITAL</h2>
                   <p>
-                     Parceria com hospitais públicos que tenham ao menos xx
+                     Parceria com hospitais públicos que tenham ao menos 50
                      leitos infantis.
                   </p>
                   <ul>
@@ -98,9 +99,7 @@ const Raiox: React.FC = () => {
                      </li>
                      <li>
                         A cada R$ 1 investido no programa de formação, R$ 2,61
-                        retornam em
-                        <b>
-                           benefícios sociais com a inclusão produtiva de
+                        retornam em <b>benefícios sociais com a inclusão produtiva de
                            artistas periféricos.
                         </b>
                      </li>
@@ -122,7 +121,7 @@ const Raiox: React.FC = () => {
                      <li>
                         <b>Três blocos de carnaval que desfilam</b> em hospitais
                         e o Bloco do Miolo Mole, que sai no Recife Antigo desde
-                        2007
+                        2007.
                      </li>
                   </ul>
                </Example>
@@ -218,15 +217,37 @@ const Subtitle = styled.h2`
    color: #000000;
 `
 
-const P = styled.p`
+const SubtitleDoutores = styled.h2`
    font-family: 'Roboto Condensed';
    font-style: normal;
-   font-weight: 500;
-   font-size: 16px;
-   line-height: 28px;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 34px;
    color: #000000;
-   margin-top: 10px;
-   max-width: 693.16px;
+
+   @media(max-width: 500px){
+      font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 32px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-transform: lowercase;
+    ::first-letter{
+      text-transform: uppercase;
+    }
+   }
+`
+
+const P = styled.p`
+vertical-align: middle;
+font-family: 'Roboto Condensed';
+font-style: normal;
+
+font-size: 20px;
+line-height: 32px;
+color: #000000;
 `
 
 const Space = styled.div`
@@ -270,14 +291,19 @@ const Example = styled.div`
       line-height: 26px;
       color: #ffffff;
       margin-bottom: 10px;
+      @media (max-width: 500px) {
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
    }
 
    p {
+      vertical-align: middle;
       font-family: 'Roboto Condensed';
       font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 28px;
+
+      font-size: 20px;
+      line-height: 32px;
       color: #000000;
    }
 

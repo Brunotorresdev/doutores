@@ -6,11 +6,16 @@ import ImgArrowLeft from '../assets/images/arrow-left.png'
 import ImgAlegria from '../assets/images/img-palhaco-brincar.png'
 import ImgDeclaracao from '../assets/images/img-declaracao.png'
 import Img96 from '../assets/images/96%.png'
+import Img95 from '../assets/images/95%.png'
+import Img89 from '../assets/images/89%.png'
+import Img85 from '../assets/images/85%.png'
+import Img72 from '../assets/images/72%.png'
 import { useNavigate } from 'react-router-dom'
+import { ScrollTop } from 'components/ScrollTop'
 
 const SocialImpact: React.FC = () => {
    const navigate = useNavigate()
-
+   ScrollTop()
    return (
       <BaseLayout>
          <Body>
@@ -28,16 +33,25 @@ const SocialImpact: React.FC = () => {
                   <h1>EXPERIÊNCIA PIONEIRA E ÚNICA</h1>
                   <p>
                      Essa proposta genuinamente brasileira, que combina arte e
-                     saúde pública, é única no mundo. Única porque atua em um
-                     dos maiores sistemas de saúde do mundo, o SUS. <br />
+                     saúde pública, é única no mundo. <br />
                      <br />
                   </p>
                   <li>
+                     Única porque atua em um dos maiores sistemas de saúde do
+                     mundo, o SUS.
+                     <br />
+                     <br />
+                  </li>
+                  <li>
                      Única porque lida, dentro de hospitais periféricos, com
                      questões sociais que são reflexo de uma sociedade pobre,
-                     racista e com oportunidades desiguais. Única porque defende
-                     a cultura como direito básico em um país que desmerece seu
-                     valor.
+                     racista e com oportunidades desiguais.
+                     <br />
+                     <br />
+                  </li>
+                  <li>
+                     Única porque defende a cultura como direito básico em um
+                     país que desmerece seu valor.
                      <br />
                      <br />
                   </li>
@@ -51,6 +65,13 @@ const SocialImpact: React.FC = () => {
                      artistas. Única porque transpôs sua experiência para a
                      sociedade na forma de espetáculos, formações,
                      documentários, vídeos e palestras.
+                     <br />
+                     <br />
+                  </li>
+                  <li>
+                     Única porque transpôs sua experiência para a sociedade na
+                     forma de espetáculos, formações, documentários, vídeos e
+                     palestras.
                      <br />
                      <br />
                   </li>
@@ -103,28 +124,37 @@ const SocialImpact: React.FC = () => {
                      </p>
                   </ContainerPorcentagem>
                   <ContainerPorcentagem>
-                     <img src={Img96} alt="" />
+                     <img src={Img95} alt="" />
                      <p>
                         dos profissionais de saúde afirmam que as crianças ficam
-                        mais à vontade com o ambiente do hospital.
+                        mais ativas (movimentadas e falantes).
                         <br />
                         <br />
                      </p>
                   </ContainerPorcentagem>
                   <ContainerPorcentagem>
-                     <img src={Img96} alt="" />
+                     <img src={Img89} alt="" />
                      <p>
                         dos profissionais de saúde afirmam que as crianças ficam
-                        mais à vontade com o ambiente do hospital.
+                        mais colaborativas com os profissionais de saúde.
                         <br />
                         <br />
                      </p>
                   </ContainerPorcentagem>
                   <ContainerPorcentagem>
-                     <img src={Img96} alt="" />
+                     <img src={Img85} alt="" />
                      <p>
-                        dos profissionais de saúde afirmam que as crianças ficam
-                        mais à vontade com o ambiente do hospital.
+                        dos profissionais de saúde afirmam que as crianças
+                        apresentam evidências clínicas de melhora.
+                        <br />
+                        <br />
+                     </p>
+                  </ContainerPorcentagem>
+                  <ContainerPorcentagem>
+                     <img src={Img72} alt="" />
+                     <p>
+                        dos profissionais de saúde afirmam que as famílias ficam
+                        mais confiantes no tratamento.
                         <br />
                         <br />
                      </p>
@@ -299,13 +329,14 @@ const ContainerPorcentagem = styled.div`
    max-height: 84px;
    align-items: center;
    justify-content: center;
+   margin-top: -20px;
    img {
       margin-right: 15px;
    }
    p {
-      max-width: 384px;
+      max-width: 400px;
       margin: 0;
-      margin-top: 25px;
+      margin-top: 20px;
       @media (max-width: 486px) {
          font-size: 15px;
          line-height: 15px;

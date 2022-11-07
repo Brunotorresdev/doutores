@@ -8,9 +8,12 @@ import ImageData from '../assets/images/all-virtual-data.png'
 import ImageDataMobile from '../assets/images/all-virtual-data-mobile (2).png'
 import ImageDepoiments from '../assets/images/all-virtual-depoiments-bg.png'
 import { useNavigate } from 'react-router-dom'
+import { ScrollTop } from 'components/ScrollTop'
 
 const AllVirtual: React.FC = () => {
    const navigate = useNavigate()
+
+   ScrollTop()
 
    return (
       <BaseLayoult>

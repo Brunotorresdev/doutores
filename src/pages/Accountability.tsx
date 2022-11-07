@@ -14,9 +14,12 @@ import ImgGraphicSix from '../assets/images/grafico6.png'
 import ImgGraphicSeven from '../assets/images/grafico7.png'
 import ImgGraphicEight from '../assets/images/grafico8.png'
 import ImgPalhacoMobile from '../assets/images/doutor-mobile.png'
+import { ScrollTop } from 'components/ScrollTop'
 
 const Accountability: React.FC = () => {
    const navigate = useNavigate()
+
+   ScrollTop()
 
    return (
       <BaseLayout>
@@ -28,7 +31,7 @@ const Accountability: React.FC = () => {
                   <h3>
                      Nossas contas são auditadas anualmente por auditorias
                      independentes. <br />
-                     Em 2020, a Singolare Consultoria e Auditoria realizou este
+                     Em 2021, a Singolare Consultoria e Auditoria realizou este
                      trabalho.
                   </h3>
                   <p>
@@ -150,6 +153,10 @@ const Section = styled.div`
       line-height: 28px;
       color: #000000;
       margin-bottom: 20px;
+
+      @media(max-width: 500px){
+         font-size: 16px;
+      }
    }
    div {
       width: 100%;

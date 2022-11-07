@@ -5,10 +5,11 @@ import ImgExpediente from '../assets/images/title-expediente.png'
 import ImgUltimoPalhaco from '../assets/images/ultimo-palhaco.png'
 import BaseLayout from 'components/BaseLayout'
 import { useNavigate } from 'react-router-dom'
+import { ScrollTop } from 'components/ScrollTop'
 
 const OfficeHour: React.FC = () => {
    const navigate = useNavigate()
-
+   ScrollTop()
    return (
       <BaseLayout>
          <Body>
@@ -30,28 +31,28 @@ const OfficeHour: React.FC = () => {
 
                   <p>
                      Arilson Lopes, Carolina Kinoshita, Daiane Carina, Edilene
-                     Silva, Luis Vieira da <br /> Rocha, Marcella Castilho, Nice
+                     Silva, Luis Vieira da Rocha, Marcella Castilho, Nice
                      Vasconcelos, Odete Peixoto, Pietra Ferrão,
-                     <br /> Ronaldo Aguiar, Silvia Contar, Simone Pimentel,
-                     Thamires Silva.
+                      Ronaldo Aguiar, Silvia Contar, Simone Pimentel,
+                     Thamires Silva, Danilo Lima.
                   </p>
                   <h1>FECHAMENTO DESTA EDIÇÃO:</h1>
                   <p>Agosto 2022</p>
                   <h1>SÃO PAULO</h1>
                   <p>
-                     São Paulo Rua Alves Guimarães, 73 Pinheiros – 05410-000 São
-                     Paulo – SP (11) 3061-5523
+                    Rua Alves Guimarães, 73 Pinheiros – 05410-000 São
+                     Paulo – SP <br /> (11) 3061-5523
                   </p>
-                  <h1>REFICE</h1>
+                  <h1>RECIFE</h1>
                   <p>
-                     Recife Rua Dona Maria César, 170 Edifício Luciano Costa
+                     Rua Dona Maria César, 170 Edifício Luciano Costa
                      Sala 201B – 2º. Andar Bairro do <br /> Recife – 50030-140
-                     Recife – PE (81) 3466-2373, 3463-0866, 99112-4676
+                     Recife – PE <br /> (81) 3466-2373, 3463-0866, 99112-4676
                   </p>
                   <h1>RIO DE JANEIRO</h1>
 
                   <p>
-                     Rio de Janeiro Rua Sebastião de Lacerda, 47 Laranjeiras –
+                     Rua Sebastião de Lacerda, 47 Laranjeiras –
                      22240-110 Rio de Janeiro – RJ <br /> (21) 2297-4176
                   </p>
                </div>
@@ -60,12 +61,12 @@ const OfficeHour: React.FC = () => {
          </Body>
          <Footer>
             <FooterContainer>
-               <div onClick={() => navigate('/parceiros')}>
+               <div onClick={() => navigate('/socios')}>
                   <img src={ImgArrowLeft} alt="" />
-                  <p>PARCEIROS</p>
+                  <p>SÓCIOS</p>
                </div>
                <div onClick={() => navigate('/')}>
-                  <p>SÓCIOS</p>
+                  <p>HOME</p>
                   <img src={ImgArrowRight} alt="" />
                </div>
             </FooterContainer>
@@ -110,7 +111,7 @@ const Section = styled.div`
          margin-bottom: 50px;
       }
       p {
-         max-width: 676px;
+         max-width: 640px;
          font-family: 'Roboto Condensed';
          font-style: normal;
          font-weight: 500;

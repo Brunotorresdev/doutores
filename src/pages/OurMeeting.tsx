@@ -6,10 +6,12 @@ import TitleImage from '../assets/images/our-meeting-title.png'
 import Palhacos from '../assets/images/our-meeting-image.png'
 import ImageDepoiments from '../assets/images/half-to-half-depoiments-bg.png'
 import { useNavigate } from 'react-router-dom'
+import { ScrollTop } from 'components/ScrollTop'
 
 const OurMeeting: React.FC = () => {
    const navigate = useNavigate()
-
+   ScrollTop()
+   
    return (
       <BaseLayout>
          <Body>
@@ -259,6 +261,9 @@ const Depoiment = styled.p`
       left: 0;
       right: 0;
       padding: 0 15px;
+   }
+   @media (max-width: 500px) {
+      font-size: 18px;
    }
 `
 const Title = styled.div`

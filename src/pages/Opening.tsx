@@ -10,9 +10,12 @@ import FooterComponent from 'components/FooterComponent'
 import ImgArrowRight from '../assets/images/arrow-right.png'
 import ImgArrowLeft from '../assets/images/arrow-left.png'
 import { useNavigate } from 'react-router-dom'
+import { ScrollTop } from 'components/ScrollTop'
 
 const Opening: React.FC = () => {
    const [modal, setModal] = useState(false)
+
+   ScrollTop()
 
    const navigate = useNavigate()
 
@@ -39,7 +42,7 @@ const Opening: React.FC = () => {
                   existência com o desafio de sobreviver em um momento de
                   aprofundamento da pandemia e de recursos escassos na área
                   cultural. <br /> <br /> Atravessar o ano foi tal qual aquela
-                  música: “ <a>A esperança dança na corda bamba de sombrinha</a>”.{' '}
+                  música: “<a>A esperança dança na corda bamba de sombrinha</a>”.{' '}
                   <br /> <br /> Lendo esta publicação, você descobrirá como a
                   organização de palhaços inovou no digital para superar o
                   distanciamento de crianças internadas e profissionais na linha
@@ -65,7 +68,7 @@ const Opening: React.FC = () => {
                   um país que ofereça um futuro com mais dignidade para crianças
                   e adolescentes brasileiros. <br /> <br /> Leia o texto do
                   nosso diretor presidente, Luis Vieira da Rocha, na íntegra
-                  <a>aqui</a>.
+                  <a href='https://doutoresdaalegria.org.br/blog/apenas-colaboracao-entre-setores-sera-capaz-de-enfrentar-legado-da-pandemia/' target="blank">aqui</a>.
                </p>
             </BodyLeftSide>
             <ImgLuiz src={ImgLuizVieira} />

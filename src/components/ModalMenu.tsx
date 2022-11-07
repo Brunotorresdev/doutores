@@ -121,7 +121,8 @@ const ModalText = styled.div`
       max-width: 500px;
       justify-content: left;
       padding-top: 00px;
-      gap: 00px;
+      gap: 0px;
+      margin-top: -25px;
    }
 
    div {
@@ -137,9 +138,13 @@ const ModalText = styled.div`
          cursor: pointer;
          color: #000000;
          margin-bottom: 14px;
-
+         
          @media (max-width: 1095px) {
             color: #fff;
+         }
+         @media (max-width: 920px) {
+            font-size: 19px;
+            line-height: 16px;
          }
       }
    }

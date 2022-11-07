@@ -10,9 +10,12 @@ import ImgArrowRight from '../assets/images/arrow-right.png'
 import ImgArrowLeft from '../assets/images/arrow-left.png'
 import { useNavigate } from 'react-router-dom'
 import ImgQuatroPalhacos from '../assets/images/img-quatro-palhacos.png'
+import { ScrollTop } from 'components/ScrollTop'
 
 const InsideAuto: React.FC = () => {
    const [modal, setModal] = useState(false)
+
+   ScrollTop()
 
    const navigate = useNavigate()
 

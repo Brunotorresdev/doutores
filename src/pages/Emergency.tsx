@@ -7,9 +7,12 @@ import { useNavigate } from 'react-router-dom'
 import ImgLeftSide from '../assets/images/left-emergencia.png'
 import ImgLeftSideMobile from '../assets/images/left-emergencia-mobile.png'
 import ImgRightSide from '../assets/images/right-emergencia.png'
+import { ScrollTop } from 'components/ScrollTop'
 
 const Emergency: React.FC = () => {
    const navigate = useNavigate()
+
+   ScrollTop()
 
    return (
       <BaseLayout>
@@ -26,18 +29,24 @@ const Emergency: React.FC = () => {
                      fome, inflação, evasão escolar e endividamento das
                      famílias, entre outras mazelas.
                   </p>
+                  <p>
+                     Como organização que busca o direito à cultura, tendo a lei
+                     federal de incentivo como principal financiadora, Doutores
+                     da Alegria lidou com a insegurança jurídica de não ter
+                     recursos liberados para realização das nossas atividades.
+                  </p>
                   <ContainerImgPalhacos>
                      <PalhacosImg src={ImgLeftSide} />
                      <PalhacosImgMobile src={ImgLeftSideMobile} />
                   </ContainerImgPalhacos>
                   <p>
-                     Como organização que busca o direito à cultura, tendo a lei
-                     federal de incentivo como principal financiadora, Doutores
-                     da Alegria lidou com a insegurança jurídica de não ter
-                     recursos liberados para realização das nossas atividades.{' '}
-                     <br />
-                     <br />
-                     Leia o texto da diretoria na íntegra <a>aqui.</a>
+                     Leia o texto da diretoria na íntegra{' '}
+                     <a
+                        href="https://doutoresdaalegria.org.br/blog/emergencia/"
+                        target="blank"
+                     >
+                        aqui.
+                     </a>
                   </p>
                </div>
                <ImageFest src={ImgRightSide} alt="" />
@@ -78,15 +87,16 @@ const Section = styled.div`
    align-items: center;
    padding: 0 15px;
 
-   a{
+   a {
       background-color: #f162a5;
       color: #fff;
       cursor: pointer;
+      text-decoration: none;
    }
    div {
       width: 100%;
       p {
-         margin-top: 79px;
+         margin-top: 30px;
          max-width: 676px;
          font-family: 'Roboto Condensed';
          font-style: normal;
@@ -94,6 +104,10 @@ const Section = styled.div`
          font-size: 18px;
          line-height: 28px;
          color: #fff;
+
+         :first-of-type {
+            margin-top: 79px;
+         }
       }
    }
 
@@ -191,8 +205,8 @@ const ImageFest = styled.img`
    }
 `
 const PalhacosImgMobile = styled.img`
-      display: none;
-  @media (max-width: 500px) {
+   display: none;
+   @media (max-width: 500px) {
       display: block;
    }
 `

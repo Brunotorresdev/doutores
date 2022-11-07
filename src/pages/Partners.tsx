@@ -30,6 +30,7 @@ import ImgLogo26 from '../assets/images/logo26.png'
 import ImgLogo27 from '../assets/images/logo27.png'
 import ImgLogo28 from '../assets/images/logo28.png'
 import ImgLogo29 from '../assets/images/logo29.png'
+import ImgLogo292 from '../assets/images/logo29(2).png'
 import ImgLogo30 from '../assets/images/logo30.png'
 import ImgLogo31 from '../assets/images/logo31.png'
 import ImgLogo32 from '../assets/images/logo32.png'
@@ -43,9 +44,12 @@ import ImgLogo39 from '../assets/images/logo39.png'
 import ImgArrowRight from '../assets/images/arrow-right.png'
 import ImgArrowLeft from '../assets/images/arrow-left.png'
 import { useNavigate } from 'react-router-dom'
+import { ScrollTop } from 'components/ScrollTop'
 
-const Partners:React.FC = () => {
+const Partners: React.FC = () => {
    const navigate = useNavigate()
+
+   ScrollTop()
 
    return (
       <BaseLayout>
@@ -117,16 +121,20 @@ const Partners:React.FC = () => {
                <TitleCenter>PATROCINADOR GENTILEZA</TitleCenter>
             </ContainerTitles>
             <ContainerGentileza>
-               
                <ul>
-                  <li>COMBUSTRAN</li>
-                  <li>WICKBOLD & NOSSO PÃO</li>
-                  <li>TRANSUNION</li>
-                  <li>SANTA LUZIA</li>
+                  <li>METISA</li>
+                  <li>OLIVEIRA TRUST</li>
+                  <li>TUV</li>
+                  <li>ONET</li>
+               </ul>
+               <ul>
+                  <li>GRAFICA GONÇALVES</li>
+                  <li>GAREN</li>
+                  <li>DEAL DIGITAL</li>
                </ul>
             </ContainerGentileza>
             <TitleSection>PROMAC/SP 2020/2021</TitleSection>
-            <TitleCenter>narigada</TitleCenter>
+            <TitleCenter>Narigada</TitleCenter>
             <ContainerLogosTwo>
                <img src={ImgLogo14} alt="" />
                <img src={ImgLogo15} alt="" />
@@ -143,8 +151,8 @@ const Partners:React.FC = () => {
                <div>
                   <h1>PATROCINADOR GENTILEZA</h1>
                   <ul>
-                     <li>JULIO OKUBO BUFALO</li>
-                     <li>SUPERMERCADP BARBOSA</li>
+                     <li>JULIO OKUBO</li>
+                     <li>SUPERMERCADo BARBOSA</li>
                      <li>BUFALO</li>
                   </ul>
                </div>
@@ -170,30 +178,39 @@ const Partners:React.FC = () => {
             </ContainerLogosTwo>
             <TitleCenter>PARCEIROS GOVERNAMENTAIS</TitleCenter>
             <ContainerLogosCenter>
-               <img src={ImgLogo25} alt="" />
+               <ImgSmallTwo src={ImgLogo25} alt="" />
             </ContainerLogosCenter>
-            <ContainerLogosTwo>
-               <img src={ImgLogo26} alt="" />
-               <img src={ImgLogo27} alt="" />
-               <img src={ImgLogo28} alt="" />
-               <img src={ImgLogo29} alt="" />
-            </ContainerLogosTwo>
-            <ContainerLogosTwo>
-               <img src={ImgLogo30} alt="" />
-               <img src={ImgLogo31} alt="" />
-               <img src={ImgLogo32} alt="" />
-            </ContainerLogosTwo>
+       
             <ContainerLogosTwo>
                <img src={ImgLogo33} alt="" />
                <ImgBig src={ImgLogo34} alt="" />
             </ContainerLogosTwo>
-            <ContainerLogos>
+            <ContainerLogosBig>
                <img src={ImgLogo35} alt="" />
                <img src={ImgLogo36} alt="" />
                <img src={ImgLogo37} alt="" />
                <img src={ImgLogo38} alt="" />
-            </ContainerLogos>
+            </ContainerLogosBig>
+         
+            <ContainerLogosThree>
+            <img src={ImgLogo29} alt="" />
+               <ImgSmall src={ImgLogo292} alt="" />
+            </ContainerLogosThree>
+            <ContainerLogosTwo >
+            <img src={ImgLogo27} alt="" />
+      
+               <img src={ImgLogo28} alt="" />
+       
+               <img src={ImgLogo30} alt="" />
+            </ContainerLogosTwo>
             <ContainerLogosTwo>
+            <img src={ImgLogo26} alt="" />
+              
+               <img src={ImgLogo31} alt="" />
+               <img src={ImgLogo32} alt="" />
+            </ContainerLogosTwo>
+            <ContainerLogosTwo>
+               
                <ImgBig src={ImgLogo39} alt="" />
             </ContainerLogosTwo>
             <TitleCenter>MARKETING RELACIONADO À CAUSA </TitleCenter>
@@ -257,7 +274,11 @@ const Partners:React.FC = () => {
          <Footer>
             <FooterContainer>
                <div>
-                  <img onClick={() => navigate('/equipe')} src={ImgArrowLeft} alt="" />
+                  <img
+                     onClick={() => navigate('/equipe')}
+                     src={ImgArrowLeft}
+                     alt=""
+                  />
                   <p>EQUIPE</p>
                </div>
                <div>
@@ -281,6 +302,7 @@ const Body = styled.div`
    width: 100%;
    margin: auto;
    padding: 0 10px;
+
 `
 
 const Title = styled.h1`
@@ -331,7 +353,7 @@ const TitleCenterRight = styled.h1`
    margin-bottom: 27px;
    text-align: center;
 
-   @media(max-width: 830px){
+   @media (max-width: 830px) {
       display: none;
    }
 `
@@ -346,7 +368,25 @@ const ContainerLogos = styled.div`
    align-items: center;
    margin-bottom: 100px;
 
-   @media(max-width: 500px){
+   @media (max-width: 500px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+   }
+`
+
+const ContainerLogosBig = styled.div`
+   max-width: 1100px;
+   width: 100%;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   align-items: center;
+   margin-bottom: 100px;
+
+   @media (max-width: 500px) {
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -355,7 +395,7 @@ const ContainerLogos = styled.div`
 `
 
 const ContainerLogosTwo = styled.div`
-   max-width: 703px;
+   max-width: 800px;
    width: 100%;
    margin: auto;
    display: flex;
@@ -367,7 +407,7 @@ const ContainerLogosTwo = styled.div`
       margin-bottom: 100px;
    }
 
-   @media(max-width: 500px){
+   @media (max-width: 500px) {
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -385,12 +425,26 @@ const ContainerLogosThree = styled.div`
    align-items: center;
    margin-bottom: 100px;
 
-   @media(max-width: 500px){
+   // img{
+   //    width:143px;
+   //    height: 125px   
+   //    }
+
+   @media (max-width: 500px) {
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 20px;
    }
+`
+
+const ImgSmall = styled.img`
+width:200px;
+`
+
+const ImgSmallTwo = styled.img`
+width:150px;
+margin-bottom: 30px;
 `
 
 const ContainerPatrocinadorGentileza = styled.div`
@@ -433,7 +487,16 @@ const ContainerPatrocinador = styled.div`
    align-items: center;
    margin-bottom: 100px;
 
+ div{
+   @media(max-width: 500px){
+      :last-child{
+         margin-left: 10px;
+      }
+   }
+ }
+
    li {
+      max-width:122px;
       font-family: 'Roboto Condensed';
       font-style: normal;
       font-weight: 500;
@@ -443,6 +506,7 @@ const ContainerPatrocinador = styled.div`
 
       color: #303030;
       margin-bottom: 4px;
+      
    }
 `
 
@@ -453,6 +517,11 @@ const ContainerPatrocinadorTwo = styled.div`
    display: flex;
    justify-content: space-between;
    margin-bottom: 60px;
+
+   @media(max-width: 500px){
+      flex-direction: column;
+   }
+
    h1 {
       text-align: left;
       font-size: 20px;
@@ -495,12 +564,12 @@ const ContainerTitles = styled.div`
 `
 
 const ContainerGentileza = styled.div`
-   max-width: 880px;
+   max-width: 410px;
    width: 100%;
    margin: auto;
    display: flex;
-   justify-content: center;
-   align-items: center;
+   justify-content: space-between;
+   align-items: top;
    margin-bottom: 100px;
 
    li {
@@ -557,10 +626,10 @@ const FooterContainer = styled.div`
 const ImgBig = styled.img`
    max-width: 700px;
 
-   @media(max-width: 710px){
+   @media (max-width: 710px) {
       max-width: 500px;
    }
-   @media(max-width: 510px){
+   @media (max-width: 510px) {
       max-width: 350px;
    }
 `

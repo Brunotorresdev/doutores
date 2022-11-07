@@ -7,10 +7,11 @@ import ImgAlegria from '../assets/images/img-fest-virtual.png'
 import ImgTable from '../assets/images/img-table-30anos.png'
 import ImgTableMobile from '../assets/images/img-table-30anos-mobile.png'
 import { useNavigate } from 'react-router-dom'
+import { ScrollTop } from 'components/ScrollTop'
 
 const VirtualParty: React.FC = () => {
    const navigate = useNavigate()
-
+   ScrollTop()
    return (
       <BaseLayout>
          <Body>
@@ -30,7 +31,7 @@ const VirtualParty: React.FC = () => {
                         </a>{' '}
                         marcou o início da festa, com palhaços narrando ao vivo
                         histórias significativas da nossa trajetória.
-                        <a> Assista aqui.</a>
+                     
                         <br />
                         <br />
                         Depois veio a segunda edição do{' '}

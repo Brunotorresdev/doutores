@@ -85,10 +85,11 @@ import Member77 from '../assets/images/equipe/Thiago Gondim_.png'
 import Member78 from '../assets/images/equipe/Wagner Oliveira_.png'
 import Member79 from '../assets/images/equipe/Silvia Contar_.png'
 import Member80 from '../assets/images/equipe/Wallace Martins_.png'
+import { ScrollTop } from 'components/ScrollTop'
 
 const Team: React.FC = () => {
    const navigate = useNavigate()
-
+   ScrollTop()
    return (
       <BaseLayout>
          <Body>
@@ -271,7 +272,7 @@ const Team: React.FC = () => {
                         <img src={Member24} />
                         <h2>Heraldo Firmino</h2>
                         <p>
-                           Coordenador do programa de Fformação de palhaço para
+                           Coordenador do programa de formação de palhaço para
                            jovens - Dr. Severino
                         </p>
                      </Member>
@@ -631,7 +632,7 @@ const Team: React.FC = () => {
                         <p>Anderson Pereira</p>
                         <p>Monique Franco</p>
                         <p>Paine Santamaria</p>
-                        <p>Lives Ciclo de Palestras - 2021</p>
+                        <span>Lives Ciclo de Palestras - 2021</span>
                      </MemberText>
                      <MemberText>
                         <h2>Assessorias / Gestão de pessoas</h2>
@@ -645,7 +646,7 @@ const Team: React.FC = () => {
                         <p>Nunes (SP)</p>
                         <p>Poema: Edna Nunes e Pollyanna Diniz </p>
                         <p>(Recife)</p>
-                        <p>Movimento Essencial: Pamina S. Milewski </p>
+                        <p>Movimento Essencial: Pamina Milewski e Marcelle Braga </p>
                         <p>(RJ)</p>
                      </MemberText>
                      <MemberText>

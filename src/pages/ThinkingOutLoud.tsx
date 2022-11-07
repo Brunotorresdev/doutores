@@ -5,10 +5,11 @@ import ImgEmergency from '../assets/images/title-pensando-em-voz-alta.png'
 import ImgDoutora from '../assets/images/doutora.png'
 import BaseLayout from 'components/BaseLayout'
 import { useNavigate } from 'react-router-dom'
+import { ScrollTop } from 'components/ScrollTop'
 
 const ThinkingOutLoud: React.FC = () => {
    const navigate = useNavigate()
-
+   ScrollTop()
    return (
       <BaseLayout>
          <Body>

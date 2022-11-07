@@ -8,9 +8,12 @@ import ImageDepoiments from '../assets/images/half-to-half-depoiments-bg.png'
 import HeartIcon from '../assets/images/heart-icon.png'
 import { useNavigate } from 'react-router-dom'
 import TopicoImg from '../assets/images/topico.png'
+import { ScrollTop } from 'components/ScrollTop'
 
 const HalfToHalf: React.FC = () => {
    const navigate = useNavigate()
+
+   ScrollTop()
 
    return (
       <BaseLayoult>
@@ -73,8 +76,7 @@ const HalfToHalf: React.FC = () => {
                   ARTÍSTICA DA DOUTORES DA ALEGRIA, UMA APRESENTAÇÃO EXCLUSIVA
                   PARA ESSE PÚBLICO.”
                   <span>
-                     Silvia Contar <br />
-                     Coordenadora da Unidade Rio de Janeiro
+                     Silvia Contar - Coordenadora da Unidade Rio de Janeiro
                   </span>
                </Depoiment>
                <ImgDepoimentsBGLeft src={ImageDepoiments} />
@@ -82,9 +84,20 @@ const HalfToHalf: React.FC = () => {
             <Section>
                <div>
                   <LastP>
-                     <a href='https://doutoresdaalegria.org.br/hospitais/palhacos-nos-hospitais/' target="blank">Veja aqui a lista de hospitais atendidos </a>
+                     <a
+                        href="https://doutoresdaalegria.org.br/hospitais/palhacos-nos-hospitais/"
+                        target="blank"
+                     >
+                        Veja aqui a lista de hospitais atendidos{' '}
+                     </a>
                      pelos Doutores da Alegria em São Paulo, Recife e
-                     <a href='https://doutoresdaalegria.org.br/hospitais/plateias-hospitalares/' target="blank">no Rio de Janeiro.</a> <br />
+                     <a
+                        href="https://doutoresdaalegria.org.br/hospitais/plateias-hospitalares/"
+                        target="blank"
+                     >
+                        no Rio de Janeiro.
+                     </a>{' '}
+                     <br />
                      Total de pessoas beneficiadas com ações presenciais ou
                      híbridas:
                   </LastP>
@@ -101,8 +114,8 @@ const HalfToHalf: React.FC = () => {
                      <p>
                         <span>
                            <img src={TopicoImg} /> 12.561
-                        </span>
-                        (público direto – crianças) e <span>24.997</span>
+                        </span>{' '}
+                        (público direto – crianças) e <span>24.997</span>{' '}
                         (público indireto – acompanhantes, profissionais de
                         saúde e outros públicos).
                      </p>
@@ -115,13 +128,13 @@ const HalfToHalf: React.FC = () => {
                      <p>
                         <span>
                            <img src={TopicoImg} /> 5.147
-                        </span>
-                        (público direto – crianças) e <span>11.107</span>
+                        </span>{' '}
+                        (público direto – crianças) e <span>11.107</span>{' '}
                         (público indireto – acompanhantes, profissionais de
                         saúde e outros públicos).
                      </p>
                   </div>
-                  <div>
+                  <LastDiv>
                      <div>
                         <img src={HeartIcon} alt="Coração rosa" />
                         <h1>Rio de Janeiro</h1>
@@ -129,16 +142,40 @@ const HalfToHalf: React.FC = () => {
                      <p>
                         <span>
                            <img src={TopicoImg} /> 240
-                        </span>
-                        pessoas e
+                        </span>{' '}
+                        pessoas
                      </p>
                      <p>
                         <span>
                            <img src={TopicoImg} /> 220
-                        </span>
+                        </span>{' '}
                         pessoas. (Plateias Convida)
                      </p>
-                  </div>
+                  </LastDiv>
+                  <LastDivMobile>
+                     <div>
+                        <img src={HeartIcon} alt="Coração rosa" />
+                        <h1>Rio de Janeiro</h1>
+                     </div>
+                     <p>
+                     <img src={TopicoImg} />
+                     <SpanName>presencial:</SpanName>
+                     
+                        <span>
+                            240
+                        </span>{' '}
+                        pessoas
+                     </p>
+                     <p>
+                     <img src={TopicoImg} />
+                     <SpanName>Plateias Convida:</SpanName>
+                     
+                        <span>
+                        220 
+                        </span>{' '}
+                        pessoas
+                     </p>
+                  </LastDivMobile>
                </NumberStates>
             </Section>
          </Body>
@@ -159,6 +196,24 @@ const HalfToHalf: React.FC = () => {
 }
 
 export default HalfToHalf
+
+const LastDiv = styled.div`
+@media(max-width: 400px){
+   display none;
+}
+`
+
+const LastDivMobile = styled.div`
+display: none;
+@media(max-width: 400px){
+   display block;
+}
+`
+
+const SpanName = styled.span`
+   margin: 0 5px 0 5px;
+   font-weight: 100 !important;
+`
 
 const Body = styled.div`
    margin-top: -16%;
@@ -182,7 +237,7 @@ const Section = styled.div`
    position: relative;
 
    @media (max-width: 1050px) {
-  flex-direction: column-reverse;
+      flex-direction: column-reverse;
    }
 
    h1 {
@@ -273,7 +328,7 @@ const ImgPalhacos = styled.img`
 `
 const SectionDepoiments = styled(Section)`
    min-height: 262px;
-   margin-top: 100px;
+   margin-top: 200px;
    margin-bottom: 50px;
 
    @media (max-width: 1050px) {
@@ -342,6 +397,7 @@ const Depoiment = styled.p`
 
    @media (max-width: 500px) {
       margin-top: -60px;
+      font-size: 18px;
    }
 `
 const NumberStates = styled.div`
@@ -400,11 +456,7 @@ const LastP = styled.p`
    max-width: 491px !important;
    width: 100%;
 
-   span{
-
+   span {
    }
 
-   @media (max-width: 500px) {
-      margin-top: 80px !important;
-   }
 `

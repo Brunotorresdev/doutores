@@ -5,6 +5,7 @@ import ImgArrowLeft from '../assets/images/arrow-left.png'
 import TitleImage from '../assets/images/associates-title.png'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
+import { ScrollTop } from 'components/ScrollTop'
 
 const AssociatesName = [
    'ABEL MAGALHAES',
@@ -664,6 +665,8 @@ const Associates: React.FC = () => {
    const navigate = useNavigate()
    const [text, setText] = useState('')
 
+   ScrollTop()
+
    return (
       <BaseLayout>
          <Body>
@@ -716,12 +719,12 @@ const Associates: React.FC = () => {
             <FooterContainer>
                <div onClick={() => navigate('/parceiros')}>
                   <img src={ImgArrowLeft} alt="" />
-                  <p>Pensando em voz alta</p>
+                  <p>Parceiros </p>
                </div>
                <div>
-                  <p>home</p>
+                  <p>Expediente</p>
                   <img
-                     onClick={() => navigate('/')}
+                     onClick={() => navigate('/expediente')}
                      src={ImgArrowRight}
                      alt=""
                   />

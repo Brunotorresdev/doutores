@@ -5,9 +5,12 @@ import ImgArrowLeft from '../assets/images/arrow-left.png'
 import ImgAlegria from '../assets/images/image-alegria.png'
 import BaseLayout from 'components/BaseLayout'
 import { useNavigate } from 'react-router-dom'
+import { ScrollTop } from 'components/ScrollTop'
 
 const Imagine: React.FC = () => {
    const navigate = useNavigate()
+
+   ScrollTop()
 
    return (
       <BaseLayout>

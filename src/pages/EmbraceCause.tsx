@@ -6,9 +6,12 @@ import ImgArrowLeft from '../assets/images/arrow-left.png'
 import ImgAlegria from '../assets/images/palhaco-balls.png'
 import ImgHeart from '../assets/images/heart.png'
 import { useNavigate } from 'react-router-dom'
+import { ScrollTop } from 'components/ScrollTop'
 
 const EmbraceCause: React.FC = () => {
    const navigate = useNavigate()
+
+   ScrollTop()
 
    return (
       <BaseLayout>
@@ -19,17 +22,17 @@ const EmbraceCause: React.FC = () => {
 
                   <p>
                      Nossas ações são destinadas a públicos em situação de
-                     vulnerabilidade e risco social. Doutores <br /> da Alegria
+                     vulnerabilidade e risco social. Doutores da Alegria
                      conta com a doação de empresas e de pessoas para manter
-                     seus projetos nas áreas <br /> de saúde, cultura e
+                     seus projetos nas áreas de saúde, cultura e
                      assistência social. <br />
                      <br />
                      Como uma organização da sociedade civil sem fins
-                     lucrativos, atuamos com transparência na <br /> prestação
+                     lucrativos, atuamos com transparência na prestação
                      de contas, cumprindo com a legislação brasileira e
-                     priorizando o bom uso dos <br /> recursos públicos e
+                     priorizando o bom uso dos recursos públicos e
                      privados. Recebemos auditoria externa de todas as contas
-                     anualmente. <br />
+                     anualmente.
                      <br /> <br />
                   </p>
 
