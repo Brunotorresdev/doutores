@@ -57,7 +57,7 @@ const Partners: React.FC = () => {
             <img src={ImgParceiros} alt="" />
             <Title>Patrocinadores e Parceiros Balanço 2021</Title>
             <TitleSection>LEI DE INCENTIVO À CULTURA</TitleSection>
-            <TitleCenter>Alegria</TitleCenter>
+            <TitleCenter>ALEGRIA</TitleCenter>
             <ContainerLogos>
                <img src={ImgLogo1} alt="" />
                <img src={ImgLogo2} alt="" />
@@ -134,7 +134,7 @@ const Partners: React.FC = () => {
                </ul>
             </ContainerGentileza>
             <TitleSection>PROMAC/SP 2020/2021</TitleSection>
-            <TitleCenter>Narigada</TitleCenter>
+            <TitleCenter>NARIGADA</TitleCenter>
             <ContainerLogosTwo>
                <img src={ImgLogo14} alt="" />
                <img src={ImgLogo15} alt="" />
@@ -152,7 +152,7 @@ const Partners: React.FC = () => {
                   <h1>PATROCINADOR GENTILEZA</h1>
                   <ul>
                      <li>JULIO OKUBO</li>
-                     <li>SUPERMERCADo BARBOSA</li>
+                     <li>SUPERMERCADO BARBOSA</li>
                      <li>BUFALO</li>
                   </ul>
                </div>
@@ -163,7 +163,7 @@ const Partners: React.FC = () => {
                <img src={ImgLogo17} alt="" />
             </ContainerLogosCenter>
             <TitleSection>FESTIVAL MIOLO MOLE</TitleSection>
-            <TitleCenter>PATROCINADORES</TitleCenter>
+            <TitleCenter>BRONZE</TitleCenter>
             <ContainerLogosThree>
                <img src={ImgLogo18} alt="" />
                <img src={ImgLogo19} alt="" />

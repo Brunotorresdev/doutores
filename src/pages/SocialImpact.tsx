@@ -62,9 +62,7 @@ const SocialImpact: React.FC = () => {
                   </li>
                   <li>
                      Única porque desenvolveu uma metodologia para formar jovens
-                     artistas. Única porque transpôs sua experiência para a
-                     sociedade na forma de espetáculos, formações,
-                     documentários, vídeos e palestras.
+                     artistas. 
                      <br />
                      <br />
                   </li>

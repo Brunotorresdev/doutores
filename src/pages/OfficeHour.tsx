@@ -30,11 +30,11 @@ const OfficeHour: React.FC = () => {
                   <h1>COLABORAÇÃO</h1>
 
                   <p>
-                     Arilson Lopes, Carolina Kinoshita, Daiane Carina, Edilene
+                     Arilson Lopes, Carolina Kinoshita, Daiane Carina,Danilo Lima, Edilene
                      Silva, Luis Vieira da Rocha, Marcella Castilho, Nice
                      Vasconcelos, Odete Peixoto, Pietra Ferrão,
                       Ronaldo Aguiar, Silvia Contar, Simone Pimentel,
-                     Thamires Silva, Danilo Lima.
+                     Thamires Silva.
                   </p>
                   <h1>FECHAMENTO DESTA EDIÇÃO:</h1>
                   <p>Agosto 2022</p>

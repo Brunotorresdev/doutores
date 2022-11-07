@@ -84,19 +84,7 @@ const HalfToHalf: React.FC = () => {
             <Section>
                <div>
                   <LastP>
-                     <a
-                        href="https://doutoresdaalegria.org.br/hospitais/palhacos-nos-hospitais/"
-                        target="blank"
-                     >
-                        Veja aqui a lista de hospitais atendidos{' '}
-                     </a>
-                     pelos Doutores da Alegria em São Paulo, Recife e
-                     <a
-                        href="https://doutoresdaalegria.org.br/hospitais/plateias-hospitalares/"
-                        target="blank"
-                     >
-                        no Rio de Janeiro.
-                     </a>{' '}
+                     <a href="https://doutoresdaalegria.org.br/hospitais/palhacos-nos-hospitais/"target="blank"> Veja aqui a lista de hospitais atendidos</a>  pelos Doutores da Alegria em São Paulo, Recife e <a href="https://doutoresdaalegria.org.br/hospitais/plateias-hospitalares/" target="blank">no Rio de Janeiro.</a>{' '}
                      <br />
                      Total de pessoas beneficiadas com ações presenciais ou
                      híbridas:
@@ -159,7 +147,7 @@ const HalfToHalf: React.FC = () => {
                      </div>
                      <p>
                      <img src={TopicoImg} />
-                     <SpanName>presencial:</SpanName>
+                     <SpanName>Presencial:</SpanName>
                      
                         <span>
                             240
