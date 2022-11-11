@@ -638,6 +638,14 @@ const Team: React.FC = () => {
                         <h2>Assessorias / Gestão de pessoas</h2>
 
                         <p>Regina Leite</p>
+                        <br /><br />
+                        <h2>Live Ciclo de Palestras - 2021</h2>
+
+                        <p>Lala Dehenzeilin</p>
+                        <p>Vera Iaconelli</p>
+                        <p>Carlos Barmak</p>
+                        <p>Jaume Carbonell</p>
+                        <p>Cleber Teixeira</p>
                      </MemberText>
                      <MemberText>
                         <h2>Imprensa</h2>
@@ -663,7 +671,7 @@ const Team: React.FC = () => {
                            Ribeiro Alves e Walter Karl Meyer
                         </p>
                         <p>
-                           <span>Knet</span> – Adriano Leite e Leandro Metropolo
+                           <span>Kasi</span> – Adriano Leite e Leandro Metropolo
                         </p>
                         <p>
                            <span>QS do Brasil</span> – Cayo Souza, Marcio Dias
@@ -860,7 +868,6 @@ const Member = styled.div`
 
    img {
       height: 140px;
-      width: 140px;
       margin-bottom: 10px;
    }
 
