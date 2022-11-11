@@ -851,9 +851,11 @@ const Title = styled.div`
 `
 
 const MembersContainer = styled.div`
+   max-width:1400px;
    width: 100%;
    display: flex;
    flex-wrap: wrap;
+   gap: 15px;  
    justify-content: start;
    margin-top: 15px;
 `
